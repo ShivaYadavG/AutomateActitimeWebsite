@@ -1,0 +1,122 @@
+12:18:21.254 [main] DEBUG resources.BaseActi - Web Application closed
+12:18:21.258 [main] DEBUG resources.BaseActi - ----------------------------------------------------
+12:18:43.146 [main] DEBUG resources.BaseActi - ----------------------------------------------------
+12:18:43.151 [main] DEBUG resources.BaseActi - Browser initialized
+12:18:52.993 [main] DEBUG resources.BaseActi - Web Applicaton  launched
+12:19:50.878 [main] DEBUG resources.BaseActi - Web Application closed
+12:19:50.878 [main] DEBUG resources.BaseActi - ----------------------------------------------------
+12:21:19.934 [main] DEBUG resources.BaseActi - ----------------------------------------------------
+12:21:19.942 [main] DEBUG resources.BaseActi - Browser initialized
+12:21:30.791 [main] DEBUG resources.BaseActi - Web Applicaton  launched
+12:22:24.202 [main] DEBUG resources.BaseActi - ----------------------------------------------------
+12:22:24.208 [main] DEBUG resources.BaseActi - Browser initialized
+12:22:34.454 [main] DEBUG resources.BaseActi - Web Applicaton  launched
+12:23:10.540 [main] DEBUG resources.BaseActi - Web Application closed
+12:23:10.540 [main] DEBUG resources.BaseActi - ----------------------------------------------------
+12:24:10.381 [main] DEBUG resources.BaseActi - ----------------------------------------------------
+12:24:10.392 [main] DEBUG resources.BaseActi - Browser initialized
+12:24:20.239 [main] DEBUG resources.BaseActi - Web Applicaton  launched
+12:28:35.862 [main] DEBUG resources.BaseActi - ----------------------------------------------------
+12:28:35.868 [main] DEBUG resources.BaseActi - Browser initialized
+12:28:56.382 [main] DEBUG resources.BaseActi - Web Applicaton  launched
+12:30:53.092 [main] DEBUG resources.BaseActi - Web Application closed
+12:30:53.093 [main] DEBUG resources.BaseActi - ----------------------------------------------------
+12:31:38.568 [main] DEBUG resources.BaseActi - ----------------------------------------------------
+12:31:38.576 [main] DEBUG resources.BaseActi - Browser initialized
+12:31:49.505 [main] DEBUG resources.BaseActi - Web Applicaton  launched
+12:33:21.603 [main] DEBUG resources.BaseActi - ----------------------------------------------------
+12:33:21.610 [main] DEBUG resources.BaseActi - Browser initialized
+12:33:37.915 [main] DEBUG resources.BaseActi - Web Applicaton  launched
+12:48:45.232 [main] DEBUG resources.BaseActi - ----------------------------------------------------
+12:48:45.236 [main] DEBUG resources.BaseActi - Browser initialized
+12:48:52.620 [main] DEBUG resources.BaseActi - Web Applicaton  launched
+12:52:46.811 [main] DEBUG resources.BaseActi - ----------------------------------------------------
+12:52:46.815 [main] DEBUG resources.BaseActi - Browser initialized
+12:52:53.581 [main] DEBUG resources.BaseActi - Web Applicaton  launched
+12:55:15.125 [main] DEBUG resources.BaseActi - ----------------------------------------------------
+12:55:15.128 [main] DEBUG resources.BaseActi - Browser initialized
+12:55:28.548 [main] DEBUG resources.BaseActi - Web Applicaton  launched
+13:01:14.538 [main] DEBUG resources.BaseActi - ----------------------------------------------------
+13:01:14.540 [main] DEBUG resources.BaseActi - Browser initialized
+13:01:35.245 [main] DEBUG resources.BaseActi - Web Applicaton  launched
+13:01:56.113 [main] DEBUG resources.BaseActi - Web Application closed
+13:01:56.113 [main] DEBUG resources.BaseActi - ----------------------------------------------------
+14:48:45.037 [main] DEBUG resources.BaseActi - ----------------------------------------------------
+14:48:45.041 [main] DEBUG resources.BaseActi - Browser initialized
+14:48:50.557 [main] DEBUG resources.BaseActi - Web Applicaton  launched
+14:49:07.367 [main] DEBUG resources.BaseActi - Web Application closed
+14:49:07.367 [main] DEBUG resources.BaseActi - ----------------------------------------------------
+14:50:15.043 [main] DEBUG resources.BaseActi - ----------------------------------------------------
+14:50:15.047 [main] DEBUG resources.BaseActi - Browser initialized
+14:50:22.371 [main] DEBUG resources.BaseActi - Web Applicaton  launched
+14:50:39.727 [main] DEBUG resources.BaseActi - Web Application closed
+14:50:39.727 [main] DEBUG resources.BaseActi - ----------------------------------------------------
+14:51:40.654 [main] DEBUG resources.BaseActi - ----------------------------------------------------
+14:51:40.657 [main] DEBUG resources.BaseActi - Browser initialized
+14:51:49.988 [main] DEBUG resources.BaseActi - Web Applicaton  launched
+14:53:41.163 [main] DEBUG resources.BaseActi - ----------------------------------------------------
+14:53:41.165 [main] DEBUG resources.BaseActi - Browser initialized
+14:53:49.389 [main] DEBUG resources.BaseActi - Web Applicaton  launched
+14:54:04.920 [main] DEBUG resources.BaseActi - Web Application closed
+14:54:04.920 [main] DEBUG resources.BaseActi - ----------------------------------------------------
+14:55:06.884 [main] DEBUG resources.BaseActi - ----------------------------------------------------
+14:55:06.890 [main] DEBUG resources.BaseActi - Browser initialized
+14:55:08.282 [main] DEBUG resources.BaseActi - Web Applicaton  launched
+14:55:28.433 [main] DEBUG resources.BaseActi - ----------------------------------------------------
+14:55:28.436 [main] DEBUG resources.BaseActi - Browser initialized
+14:55:35.380 [main] DEBUG resources.BaseActi - Web Applicaton  launched
+14:55:51.764 [main] DEBUG resources.BaseActi - Web Application closed
+14:55:51.764 [main] DEBUG resources.BaseActi - ----------------------------------------------------
+14:56:28.863 [main] DEBUG resources.BaseActi - ----------------------------------------------------
+14:56:28.865 [main] DEBUG resources.BaseActi - Browser initialized
+14:56:38.137 [main] DEBUG resources.BaseActi - Web Applicaton  launched
+14:57:09.080 [main] DEBUG resources.BaseActi - Web Application closed
+14:57:09.080 [main] DEBUG resources.BaseActi - ----------------------------------------------------
+16:01:56.434 [main] DEBUG resources.BaseActi - ----------------------------------------------------
+16:01:56.441 [main] DEBUG resources.BaseActi - Browser initialized
+16:02:07.241 [main] DEBUG resources.BaseActi - Web Applicaton  launched
+16:02:22.941 [main] DEBUG resources.BaseActi - Web Application closed
+16:02:22.941 [main] DEBUG resources.BaseActi - ----------------------------------------------------
+16:03:59.024 [main] DEBUG resources.BaseActi - ----------------------------------------------------
+16:03:59.032 [main] DEBUG resources.BaseActi - Browser initialized
+16:04:08.902 [main] DEBUG resources.BaseActi - Web Applicaton  launched
+16:04:39.325 [main] DEBUG resources.BaseActi - Web Application closed
+16:04:39.325 [main] DEBUG resources.BaseActi - ----------------------------------------------------
+16:05:15.576 [main] DEBUG resources.BaseActi - ----------------------------------------------------
+16:05:15.580 [main] DEBUG resources.BaseActi - Browser initialized
+16:05:30.505 [main] DEBUG resources.BaseActi - Web Applicaton  launched
+16:05:46.992 [main] DEBUG resources.BaseActi - Web Application closed
+16:05:46.992 [main] DEBUG resources.BaseActi - ----------------------------------------------------
+16:06:27.658 [main] DEBUG resources.BaseActi - ----------------------------------------------------
+16:06:27.660 [main] DEBUG resources.BaseActi - Browser initialized
+16:06:38.288 [main] DEBUG resources.BaseActi - Web Applicaton  launched
+16:09:30.985 [main] DEBUG resources.BaseActi - ----------------------------------------------------
+16:09:30.989 [main] DEBUG resources.BaseActi - Browser initialized
+16:09:39.927 [main] DEBUG resources.BaseActi - Web Applicaton  launched
+16:09:59.281 [main] DEBUG resources.BaseActi - Web Application closed
+16:09:59.282 [main] DEBUG resources.BaseActi - ----------------------------------------------------
+16:26:10.750 [main] DEBUG resources.BaseActi - ----------------------------------------------------
+16:26:10.756 [main] DEBUG resources.BaseActi - Browser initialized
+16:26:22.731 [main] DEBUG resources.BaseActi - Web Applicaton  launched
+16:26:38.860 [main] DEBUG resources.BaseActi - Web Application closed
+16:26:38.860 [main] DEBUG resources.BaseActi - ----------------------------------------------------
+16:30:25.006 [main] DEBUG resources.BaseActi - ----------------------------------------------------
+16:30:25.010 [main] DEBUG resources.BaseActi - Browser initialized
+16:30:36.265 [main] DEBUG resources.BaseActi - Web Applicaton  launched
+16:30:50.315 [main] DEBUG resources.BaseActi - Web Application closed
+16:30:50.315 [main] DEBUG resources.BaseActi - ----------------------------------------------------
+16:34:51.902 [main] DEBUG resources.BaseActi - ----------------------------------------------------
+16:34:51.905 [main] DEBUG resources.BaseActi - Browser initialized
+16:35:02.901 [main] DEBUG resources.BaseActi - Web Applicaton  launched
+16:35:27.319 [main] DEBUG resources.BaseActi - Web Application closed
+16:35:27.319 [main] DEBUG resources.BaseActi - ----------------------------------------------------
+16:36:05.688 [main] DEBUG resources.BaseActi - ----------------------------------------------------
+16:36:05.691 [main] DEBUG resources.BaseActi - Browser initialized
+16:36:17.156 [main] DEBUG resources.BaseActi - Web Applicaton  launched
+16:36:43.180 [main] DEBUG resources.BaseActi - Web Application closed
+16:36:43.181 [main] DEBUG resources.BaseActi - ----------------------------------------------------
+16:38:39.651 [main] DEBUG resources.BaseActi - ----------------------------------------------------
+16:38:39.656 [main] DEBUG resources.BaseActi - Browser initialized
+16:38:52.371 [main] DEBUG resources.BaseActi - Web Applicaton  launched
+16:39:50.065 [main] DEBUG resources.BaseActi - ----------------------------------------------------
+16:39:50.071 [main] DEBUG resources.BaseActi - Browser initialized

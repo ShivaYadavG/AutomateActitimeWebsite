@@ -1,0 +1,119 @@
+19:16:04.752 [main] DEBUG resources.BaseActi - Web Applicaton  launched
+19:16:12.828 [main] DEBUG test.tasksListCheckTest - Web Application closed
+19:16:12.828 [main] DEBUG test.tasksListCheckTest - ----------------------------------------------------
+19:16:40.771 [main] DEBUG resources.BaseActi - ----------------------------------------------------
+19:16:40.775 [main] DEBUG resources.BaseActi - Browser initialized
+19:16:46.823 [main] DEBUG resources.BaseActi - Web Applicaton  launched
+19:18:18.101 [main] DEBUG resources.BaseActi - ----------------------------------------------------
+19:18:18.104 [main] DEBUG resources.BaseActi - Browser initialized
+19:18:25.138 [main] DEBUG resources.BaseActi - Web Applicaton  launched
+19:18:32.654 [main] DEBUG test.tasksListCheckTest - Web Application closed
+19:18:32.654 [main] DEBUG test.tasksListCheckTest - ----------------------------------------------------
+19:19:18.499 [main] DEBUG resources.BaseActi - ----------------------------------------------------
+19:19:18.502 [main] DEBUG resources.BaseActi - Browser initialized
+19:19:28.708 [main] DEBUG resources.BaseActi - Web Applicaton  launched
+19:19:35.986 [main] DEBUG test.tasksListCheckTest - Web Application closed
+19:19:35.986 [main] DEBUG test.tasksListCheckTest - ----------------------------------------------------
+19:20:24.282 [main] DEBUG resources.BaseActi - ----------------------------------------------------
+19:20:24.284 [main] DEBUG resources.BaseActi - Browser initialized
+19:20:30.799 [main] DEBUG resources.BaseActi - Web Applicaton  launched
+19:20:38.160 [main] DEBUG test.tasksListCheckTest - Web Application closed
+19:20:38.161 [main] DEBUG test.tasksListCheckTest - ----------------------------------------------------
+19:21:17.598 [main] DEBUG resources.BaseActi - ----------------------------------------------------
+19:21:17.601 [main] DEBUG resources.BaseActi - Browser initialized
+19:21:25.008 [main] DEBUG resources.BaseActi - Web Applicaton  launched
+19:21:35.718 [main] DEBUG test.tasksListCheckTest - Web Application closed
+19:21:35.718 [main] DEBUG test.tasksListCheckTest - ----------------------------------------------------
+19:22:28.311 [main] DEBUG resources.BaseActi - ----------------------------------------------------
+19:22:28.315 [main] DEBUG resources.BaseActi - Browser initialized
+19:22:35.186 [main] DEBUG resources.BaseActi - Web Applicaton  launched
+19:22:48.190 [main] DEBUG test.tasksListCheckTest - Web Application closed
+19:22:48.191 [main] DEBUG test.tasksListCheckTest - ----------------------------------------------------
+19:22:58.605 [main] DEBUG resources.BaseActi - ----------------------------------------------------
+19:22:58.608 [main] DEBUG resources.BaseActi - Browser initialized
+19:23:05.363 [main] DEBUG resources.BaseActi - Web Applicaton  launched
+19:23:12.896 [main] DEBUG test.tasksListCheckTest - Web Application closed
+19:23:12.896 [main] DEBUG test.tasksListCheckTest - ----------------------------------------------------
+19:23:32.197 [main] DEBUG resources.BaseActi - ----------------------------------------------------
+19:23:32.201 [main] DEBUG resources.BaseActi - Browser initialized
+19:23:39.064 [main] DEBUG resources.BaseActi - Web Applicaton  launched
+19:23:54.197 [main] DEBUG test.tasksListCheckTest - Web Application closed
+19:23:54.198 [main] DEBUG test.tasksListCheckTest - ----------------------------------------------------
+19:24:50.793 [main] DEBUG resources.BaseActi - ----------------------------------------------------
+19:24:50.796 [main] DEBUG resources.BaseActi - Browser initialized
+19:24:58.892 [main] DEBUG resources.BaseActi - Web Applicaton  launched
+19:25:11.062 [main] DEBUG test.tasksListCheckTest - Web Application closed
+19:25:11.062 [main] DEBUG test.tasksListCheckTest - ----------------------------------------------------
+19:25:50.291 [main] DEBUG resources.BaseActi - ----------------------------------------------------
+19:25:50.295 [main] DEBUG resources.BaseActi - Browser initialized
+19:25:57.402 [main] DEBUG resources.BaseActi - Web Applicaton  launched
+19:26:07.936 [main] DEBUG test.tasksListCheckTest - Web Application closed
+19:26:07.936 [main] DEBUG test.tasksListCheckTest - ----------------------------------------------------
+19:26:16.418 [main] DEBUG resources.BaseActi - ----------------------------------------------------
+19:26:16.420 [main] DEBUG resources.BaseActi - Browser initialized
+19:26:22.438 [main] DEBUG resources.BaseActi - Web Applicaton  launched
+19:26:35.041 [main] DEBUG test.tasksListCheckTest - Web Application closed
+19:26:35.041 [main] DEBUG test.tasksListCheckTest - ----------------------------------------------------
+19:27:47.148 [main] DEBUG resources.BaseActi - ----------------------------------------------------
+19:27:47.150 [main] DEBUG resources.BaseActi - Browser initialized
+19:27:53.413 [main] DEBUG resources.BaseActi - Web Applicaton  launched
+19:28:42.070 [main] DEBUG test.tasksListCheckTest - Web Application closed
+19:28:42.070 [main] DEBUG test.tasksListCheckTest - ----------------------------------------------------
+19:38:41.500 [main] DEBUG resources.BaseActi - ----------------------------------------------------
+19:38:41.504 [main] DEBUG resources.BaseActi - Browser initialized
+19:38:48.890 [main] DEBUG resources.BaseActi - Web Applicaton  launched
+19:39:29.085 [main] DEBUG test.tasksListCheckTest - Web Application closed
+19:39:29.086 [main] DEBUG test.tasksListCheckTest - ----------------------------------------------------
+10:30:13.823 [main] DEBUG resources.BaseActi - ----------------------------------------------------
+10:30:13.830 [main] DEBUG resources.BaseActi - Browser initialized
+10:30:19.417 [main] DEBUG resources.BaseActi - Web Applicaton  launched
+10:31:07.346 [main] DEBUG test.tasksListCheckTest - Web Application closed
+10:31:07.346 [main] DEBUG test.tasksListCheckTest - ----------------------------------------------------
+10:33:09.383 [main] DEBUG resources.BaseActi - ----------------------------------------------------
+10:33:09.386 [main] DEBUG resources.BaseActi - Browser initialized
+10:33:19.075 [main] DEBUG resources.BaseActi - Web Applicaton  launched
+10:34:08.234 [main] DEBUG test.tasksListCheckTest - Web Application closed
+10:34:08.234 [main] DEBUG test.tasksListCheckTest - ----------------------------------------------------
+10:36:02.987 [main] DEBUG resources.BaseActi - ----------------------------------------------------
+10:36:02.991 [main] DEBUG resources.BaseActi - Browser initialized
+10:36:10.768 [main] DEBUG resources.BaseActi - Web Applicaton  launched
+10:36:59.801 [main] DEBUG test.tasksListCheckTest - Web Application closed
+10:36:59.802 [main] DEBUG test.tasksListCheckTest - ----------------------------------------------------
+10:48:41.625 [main] DEBUG resources.BaseActi - ----------------------------------------------------
+10:48:41.628 [main] DEBUG resources.BaseActi - Browser initialized
+10:48:47.551 [main] DEBUG resources.BaseActi - Web Applicaton  launched
+10:49:35.324 [main] DEBUG test.tasksListCheckTest - Web Application closed
+10:49:35.324 [main] DEBUG test.tasksListCheckTest - ----------------------------------------------------
+10:51:18.574 [main] DEBUG resources.BaseActi - ----------------------------------------------------
+10:51:18.578 [main] DEBUG resources.BaseActi - Browser initialized
+10:51:19.861 [main] DEBUG resources.BaseActi - Web Applicaton  launched
+10:51:57.072 [main] DEBUG resources.BaseActi - ----------------------------------------------------
+10:51:57.077 [main] DEBUG resources.BaseActi - Browser initialized
+10:52:03.504 [main] DEBUG resources.BaseActi - Web Applicaton  launched
+10:52:24.584 [main] DEBUG resources.BaseActi - ----------------------------------------------------
+10:52:24.587 [main] DEBUG resources.BaseActi - Browser initialized
+10:52:30.035 [main] DEBUG resources.BaseActi - Web Applicaton  launched
+10:53:12.318 [main] DEBUG test.tasksListCheckTest - Web Application closed
+10:53:12.318 [main] DEBUG test.tasksListCheckTest - ----------------------------------------------------
+10:58:45.908 [main] DEBUG resources.BaseActi - ----------------------------------------------------
+10:58:45.910 [main] DEBUG resources.BaseActi - Browser initialized
+10:58:56.074 [main] DEBUG resources.BaseActi - Web Applicaton  launched
+10:59:38.431 [main] DEBUG test.tasksListCheckTest - Web Application closed
+10:59:38.431 [main] DEBUG test.tasksListCheckTest - ----------------------------------------------------
+11:05:30.536 [main] DEBUG resources.BaseActi - ----------------------------------------------------
+11:05:30.543 [main] DEBUG resources.BaseActi - Browser initialized
+11:05:41.718 [main] DEBUG resources.BaseActi - Web Applicaton  launched
+11:06:24.797 [main] DEBUG test.tasksListCheckTest - Web Application closed
+11:06:24.797 [main] DEBUG test.tasksListCheckTest - ----------------------------------------------------
+11:12:32.427 [main] DEBUG resources.BaseActi - ----------------------------------------------------
+11:12:32.430 [main] DEBUG resources.BaseActi - Browser initialized
+11:12:52.388 [main] DEBUG resources.BaseActi - Web Applicaton  launched
+11:13:36.753 [main] DEBUG test.tasksListCheckTest - Web Application closed
+11:13:36.753 [main] DEBUG test.tasksListCheckTest - ----------------------------------------------------
+11:25:21.016 [main] DEBUG resources.BaseActi - ----------------------------------------------------
+11:25:21.018 [main] DEBUG resources.BaseActi - Browser initialized
+11:25:39.812 [main] DEBUG resources.BaseActi - Web Applicaton  launched
+11:26:25.928 [main] DEBUG test.tasksListCheckTest - Web Application closed
+11:26:25.928 [main] DEBUG test.tasksListCheckTest - ----------------------------------------------------
+11:31:16.023 [main] DEBUG resources.BaseActi - ----------------------------------------------------
+11:31:16.026 [main] DEBUG resources.BaseActi - Browser initialized

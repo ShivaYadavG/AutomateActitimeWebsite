@@ -1,0 +1,125 @@
+12:44:25.730 [main] DEBUG test.CommonTest - Assertion of project name
+12:44:27.016 [main] DEBUG test.CommonTest - Automate actitime website2024-05-14 12:44:13task is added
+12:44:27.077 [main] DEBUG test.CommonTest - Clicked on add new button 
+12:44:27.208 [main] DEBUG test.CommonTest - Entered new task 
+12:44:27.907 [main] DEBUG test.CommonTest - Clicked on add new button after entering new task
+12:45:08.563 [main] DEBUG test.CommonTest - Web Application closed
+12:45:08.563 [main] DEBUG test.CommonTest - ----------------------------------------------------
+12:46:09.136 [main] DEBUG resources.BaseActi - ----------------------------------------------------
+12:46:09.143 [main] DEBUG resources.BaseActi - Browser initialized
+12:46:18.114 [main] DEBUG resources.BaseActi - Web Applicaton  launched
+12:46:26.487 [main] DEBUG test.CommonTest - Clicked on create customer button
+12:46:29.623 [main] DEBUG test.CommonTest - Clicked on add new button again
+12:46:29.715 [main] DEBUG test.CommonTest - clicked on new project
+12:46:30.222 [main] DEBUG test.CommonTest - Entered project name
+12:46:30.580 [main] DEBUG test.CommonTest - Clicked on create customer button
+12:46:31.028 [main] DEBUG test.CommonTest - Clicked on add new button to create new task
+12:46:31.133 [main] DEBUG test.CommonTest - Clicked on create new task
+12:46:31.853 [main] DEBUG test.CommonTest - Entered Task name
+12:46:32.047 [main] DEBUG test.CommonTest - Clicked on create task
+12:46:32.259 [main] DEBUG test.CommonTest - Searched customer name
+12:46:32.389 [main] DEBUG test.CommonTest - Found the customer name that is : Shiva2024-05-14 12:46:18
+12:46:33.129 [main] DEBUG test.CommonTest - Clicked on customer view customer projects
+12:46:33.230 [main] DEBUG test.CommonTest - Found the project that is : Actitime automation project2024-05-14 12:46:18
+12:46:33.230 [main] DEBUG test.CommonTest - Assertion of project name
+12:46:34.756 [main] DEBUG test.CommonTest - Automate actitime website2024-05-14 12:46:18task is added
+12:46:34.848 [main] DEBUG test.CommonTest - Clicked on add new button 
+12:46:34.973 [main] DEBUG test.CommonTest - Entered new task 
+12:46:35.672 [main] DEBUG test.CommonTest - Clicked on add new button after entering new task
+12:46:37.053 [main] DEBUG test.CommonTest - Web Application closed
+12:46:37.053 [main] DEBUG test.CommonTest - ----------------------------------------------------
+12:49:49.879 [main] DEBUG resources.BaseActi - ----------------------------------------------------
+12:49:49.887 [main] DEBUG resources.BaseActi - Browser initialized
+12:49:58.203 [main] DEBUG resources.BaseActi - Web Applicaton  launched
+12:50:06.324 [main] DEBUG test.CommonTest - Clicked on create customer button
+12:50:09.450 [main] DEBUG test.CommonTest - Clicked on add new button again
+12:50:09.556 [main] DEBUG test.CommonTest - clicked on new project
+12:50:09.983 [main] DEBUG test.CommonTest - Entered project name
+12:50:10.278 [main] DEBUG test.CommonTest - Clicked on create customer button
+12:50:10.798 [main] DEBUG test.CommonTest - Clicked on add new button to create new task
+12:50:10.862 [main] DEBUG test.CommonTest - Clicked on create new task
+12:50:11.498 [main] DEBUG test.CommonTest - Entered Task name
+12:50:11.699 [main] DEBUG test.CommonTest - Clicked on create task
+12:50:11.872 [main] DEBUG test.CommonTest - Searched customer name
+12:50:11.997 [main] DEBUG test.CommonTest - Found the customer name that is : Shiva2024-05-14 12:49:58
+12:50:12.773 [main] DEBUG test.CommonTest - Clicked on customer view customer projects
+12:50:13.013 [main] DEBUG test.CommonTest - Found the project that is : Actitime automation project2024-05-14 12:49:58
+12:50:13.013 [main] DEBUG test.CommonTest - Assertion of project name
+12:50:14.612 [main] DEBUG test.CommonTest - Automate actitime website2024-05-14 12:49:58task is added
+12:50:14.733 [main] DEBUG test.CommonTest - Clicked on add new button 
+12:50:14.878 [main] DEBUG test.CommonTest - Entered new task 
+12:50:15.898 [main] DEBUG test.CommonTest - Clicked on add new button after entering new task
+12:51:01.724 [main] DEBUG resources.BaseActi - ----------------------------------------------------
+12:51:01.728 [main] DEBUG resources.BaseActi - Browser initialized
+12:51:11.759 [main] DEBUG resources.BaseActi - Web Applicaton  launched
+12:51:20.297 [main] DEBUG test.CommonTest - Clicked on create customer button
+12:51:23.431 [main] DEBUG test.CommonTest - Clicked on add new button again
+12:51:23.532 [main] DEBUG test.CommonTest - clicked on new project
+12:51:24.037 [main] DEBUG test.CommonTest - Entered project name
+12:51:24.417 [main] DEBUG test.CommonTest - Clicked on create customer button
+12:51:24.904 [main] DEBUG test.CommonTest - Clicked on add new button to create new task
+12:51:25.020 [main] DEBUG test.CommonTest - Clicked on create new task
+12:51:25.595 [main] DEBUG test.CommonTest - Entered Task name
+12:51:25.913 [main] DEBUG test.CommonTest - Clicked on create task
+12:51:26.080 [main] DEBUG test.CommonTest - Searched customer name
+12:51:26.229 [main] DEBUG test.CommonTest - Found the customer name that is : Shiva2024-05-14 12:51:11
+12:51:26.959 [main] DEBUG test.CommonTest - Clicked on customer view customer projects
+12:51:27.121 [main] DEBUG test.CommonTest - Found the project that is : Actitime automation project2024-05-14 12:51:11
+12:51:27.121 [main] DEBUG test.CommonTest - Assertion of project name
+12:51:28.244 [main] DEBUG test.CommonTest - Automate actitime website2024-05-14 12:51:11task is added
+12:51:28.362 [main] DEBUG test.CommonTest - Clicked on add new button 
+12:51:28.657 [main] DEBUG test.CommonTest - Entered new task 
+12:51:29.189 [main] DEBUG test.CommonTest - Clicked on add new button after entering new task
+12:51:30.539 [main] DEBUG test.CommonTest - Web Application closed
+12:51:30.539 [main] DEBUG test.CommonTest - ----------------------------------------------------
+12:54:37.547 [main] DEBUG resources.BaseActi - ----------------------------------------------------
+12:54:37.552 [main] DEBUG resources.BaseActi - Browser initialized
+12:54:47.521 [main] DEBUG resources.BaseActi - Web Applicaton  launched
+12:54:55.679 [main] DEBUG test.CommonTest - Clicked on create customer button
+12:54:58.773 [main] DEBUG test.CommonTest - Clicked on add new button again
+12:54:58.876 [main] DEBUG test.CommonTest - clicked on new project
+12:54:59.463 [main] DEBUG test.CommonTest - Entered project name
+12:54:59.810 [main] DEBUG test.CommonTest - Clicked on create customer button
+12:55:00.268 [main] DEBUG test.CommonTest - Clicked on add new button to create new task
+12:55:00.368 [main] DEBUG test.CommonTest - Clicked on create new task
+12:55:00.956 [main] DEBUG test.CommonTest - Entered Task name
+12:55:01.245 [main] DEBUG test.CommonTest - Clicked on create task
+12:55:01.472 [main] DEBUG test.CommonTest - Searched customer name
+12:55:01.613 [main] DEBUG test.CommonTest - Found the customer name that is : Shiva2024-05-14 12:54:47
+12:55:02.264 [main] DEBUG test.CommonTest - Clicked on customer view customer projects
+12:55:02.437 [main] DEBUG test.CommonTest - Found the project that is : Actitime automation project2024-05-14 12:54:47
+12:55:02.437 [main] DEBUG test.CommonTest - Assertion of project name
+12:55:03.827 [main] DEBUG test.CommonTest - Automate actitime website2024-05-14 12:54:47task is added
+12:55:03.912 [main] DEBUG test.CommonTest - Clicked on add new button 
+12:55:04.039 [main] DEBUG test.CommonTest - Entered new task 
+12:55:04.799 [main] DEBUG test.CommonTest - Clicked on add new button after entering new task
+12:55:06.134 [main] DEBUG test.CommonTest - Web Application closed
+12:55:06.134 [main] DEBUG test.CommonTest - ----------------------------------------------------
+12:57:19.561 [main] DEBUG resources.BaseActi - ----------------------------------------------------
+12:57:19.565 [main] DEBUG resources.BaseActi - Browser initialized
+12:57:20.626 [main] DEBUG resources.BaseActi - Web Applicaton  launched
+12:57:37.224 [main] DEBUG test.CommonTest - Clicked on create customer button
+12:57:40.339 [main] DEBUG test.CommonTest - Clicked on add new button again
+12:57:40.483 [main] DEBUG test.CommonTest - clicked on new project
+12:57:40.987 [main] DEBUG test.CommonTest - Entered project name
+12:57:41.416 [main] DEBUG test.CommonTest - Clicked on create customer button
+12:57:41.960 [main] DEBUG test.CommonTest - Clicked on add new button to create new task
+12:57:42.051 [main] DEBUG test.CommonTest - Clicked on create new task
+12:57:42.647 [main] DEBUG test.CommonTest - Entered Task name
+12:57:42.866 [main] DEBUG test.CommonTest - Clicked on create task
+12:57:43.191 [main] DEBUG test.CommonTest - Searched customer name
+12:57:43.299 [main] DEBUG test.CommonTest - Found the customer name that is : Shiva2024-05-14 12:57:20
+12:57:43.968 [main] DEBUG test.CommonTest - Clicked on customer view customer projects
+12:57:44.120 [main] DEBUG test.CommonTest - Found the project that is : Actitime automation project2024-05-14 12:57:20
+12:57:44.120 [main] DEBUG test.CommonTest - Assertion of project name
+12:57:45.254 [main] DEBUG test.CommonTest - Automate actitime website2024-05-14 12:57:20task is added
+12:57:45.328 [main] DEBUG test.CommonTest - Clicked on add new button 
+12:57:45.437 [main] DEBUG test.CommonTest - Entered new task 
+12:57:46.224 [main] DEBUG test.CommonTest - Clicked on add new button after entering new task
+12:57:47.583 [main] DEBUG test.CommonTest - Web Application closed
+12:57:47.583 [main] DEBUG test.CommonTest - ----------------------------------------------------
+12:59:38.274 [main] DEBUG resources.BaseActi - ----------------------------------------------------
+12:59:38.277 [main] DEBUG resources.BaseActi - Browser initialized
+12:59:43.927 [main] DEBUG resources.BaseActi - Web Applicaton  launched
+12:59:52.314 [main] DEBUG test.CommonTest - Clicked on create customer button
+12:59:55.419 [main] DEBUG test.CommonTest - Clicked on add new button again
