@@ -55,34 +55,6 @@ public class tasksListCheckTest extends BaseActi {
 		String ViewTimeTrackPageTabURL = driver.getCurrentUrl();
 		Assert.assertEquals(ViewTimeTrackPageTabURL, "https://online.actitime.com/relanto/tasks/tasklist.do");
 
-		// Simulate Ctrl + Shift + -
-		// for(int i=0; i<3; i++){
-		// actions.sendKeys(Keys.chord(Keys.CONTROL, Keys.SHIFT, Keys.SUBTRACT));
-		// }
-//        driver.findElement(By.tagName("body")).sendKeys(Keys.chord(Keys.CONTROL, Keys.SHIFT, Keys.SUBTRACT));
-//        driver.findElement(By.tagName("body")).sendKeys(Keys.chord(Keys.CONTROL, Keys.SHIFT, Keys.SUBTRACT));
-//        driver.findElement(By.tagName("body")).sendKeys(Keys.chord(Keys.CONTROL, Keys.SHIFT, Keys.SUBTRACT));
-//		 JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
-//	     jsExecutor.executeScript("document.body.style.zoom='50%'");
-//	     jsExecutor.executeScript("document.querySelector('div.content.kanbanVerticalScrollContainer').scrollTop += arguments[0];", 500);	
-
-		// Scroll
-//		JavascriptExecutor js = (JavascriptExecutor)driver;
-//		js.executeScript("document.body.style.zoom='75%'");
-//		
-//		WebElement scrollElement1 = driver.findElement(By.xpath("//div[contains(text(),'OPEN TASKS')]//following::*[text()[contains(.,'Flight operations')]]"));
-//		js.executeScript("window.scrollTo(0,0);", scrollElement1);
-//		js.executeScript("arguments[0].scrollIntoView();", scrollElement1);
-//		
-//		WebElement scrollElement2 = driver.findElement(By.xpath("//div[contains(text(),'OPEN TASKS')]//following::*[text()[contains(.,'Spaceship building')]]"));
-//		js.executeScript("window.scrollTo(0,0);", scrollElement2);
-//		js.executeScript("arguments[0].scrollIntoView();", scrollElement2);
-//		
-//		WebElement scrollElement3 = driver.findElement(By.xpath("//div[contains(text(),'OPEN TASKS')]//following::*[text()[contains(.,'Spaceship testing')]]"));
-//		js.executeScript("window.scrollTo(0,0);", scrollElement3);
-//		js.executeScript("arguments[0].scrollIntoView();", scrollElement3);
-//		
-
 		// clicking on Big bang company and getting all tasks list
 		wait.until(ExpectedConditions.elementToBeClickable(By.xpath(tasksListCheckTestObjects.BigBangCompanyCust())));
 		ElementSelector.clickByxpath(tasksListCheckTestObjects.BigBangCompanyCust());
@@ -114,7 +86,6 @@ public class tasksListCheckTest extends BaseActi {
 		printTasks(BigBangCompanyHM);
 
 		// calling methods to verify the whether the tasks are present in the Big bang
-		// compay or not
 		areTasksPresentInBigBangCust(BigBangCompanyHM, FlightOperationProjectHM);
 		areTasksPresentInBigBangCust(BigBangCompanyHM, ShipBuildingOperationHM);
 		areTasksPresentInBigBangCust(BigBangCompanyHM, ShipTestingProjectHM);
@@ -130,23 +101,6 @@ public class tasksListCheckTest extends BaseActi {
 		Assert.assertEquals(TotalBigBangCompanyTasks, TotalTasksInDifferentStatuses);
 		log.debug("Total number of tasks are verified");
 	}
-
-	/*
-	// Getting all the tasks heders
-	public ArrayList<String> gettingAllTasksHeaders() {
-		ArrayList<String> taskHeadersList = new ArrayList<>();
-		tasksListCheckTestObjects tasksListCheckTestObjects = new tasksListCheckTestObjects(driver);
-		List<WebElement> allTasksHeaders = driver.findElements(By.xpath(tasksListCheckTestObjects.tasksHeader()));
-		for (WebElement taskHeader : allTasksHeaders) {
-			if (taskHeader.getText().contains("'"))
-				taskHeadersList.add(taskHeader.getText().split("'")[0]);
-			else
-				taskHeadersList.add(taskHeader.getText());
-		}
-		return taskHeadersList;
-
-	}
-	*/
 
 	// Getting all tasks in Big bang company customer and its projects
 	public HashMap gettingTasksList(String project_CustomerName) throws InterruptedException {
@@ -180,22 +134,7 @@ public class tasksListCheckTest extends BaseActi {
 		for(WebElement ele : list3) {
 			System.out.println(ele.getText());
 		}
-		//driver.findElement(By.xpath("//*[text()='OPEN TASKS']//following::*[@class='projectName' and text()='Spaceship building']/..//div[@class='icon']")).click();
-		//driver.findElement(By.xpath("//*[text()='OPEN TASKS']//following::*[@class='projectName' and text()='Spaceship testing']/..//div[@class='icon']")).click();
-		
-//		ArrayList<String> taskHeaders = gettingAllTasksHeaders();
-		// collecting headers
-		
-		/*
-		  for (String taskHead : taskHeaders) { String StatusXpath2 =
-		  "//div[contains(@class,'taskColumns')]/div[contains(@class,'tasksColumn')][count(//div[contains(text(),'"
-		  + taskHead +
-		  "')]/ancestor::div[contains(@class,'statusHeader statusType')]/preceding-sibling::div)+1]//div[contains(@class,'name')]"
-		  ; String StatusXpath =
-		  "//*[text()[contains(.,'OPEN TASKS')]]//following::*[@class='name gradientEllipsis']"
-		  ; addingTasksInHashmapList(StatusXpath); }
-		 */
-
+	
 		List<WebElement> minimizeMaximizeIcons = driver.findElements(By.xpath(tasksListCheckTestObjects.minimizeCustomer()));
 		List<WebElement> tasksOfCustomerList = driver.findElements(By.xpath(tasksListCheckTestObjects.tasksInCustomersRow()));
 		for (WebElement customerMaxMinIcon : minimizeMaximizeIcons) {
