@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test name="Default test(failed)">
     <classes>
-      <class name="test.tasksListCheckTest">
+      <class name="test.CommonTest">
         <methods>
+          <include name="creatingNewTaskFromTaskTabTest"/>
           <include name="launching"/>
           <include name="closure"/>
-          <include name="tasksListCheckTest"/>
         </methods>
-      </class> <!-- test.tasksListCheckTest -->
+      </class> <!-- test.CommonTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

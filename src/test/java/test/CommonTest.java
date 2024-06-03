@@ -1,6 +1,5 @@
 package test;
 
-import static org.testng.Assert.assertEquals;
 
 import java.io.IOException;
 import java.text.SimpleDateFormat;
@@ -12,32 +11,35 @@ import java.util.concurrent.TimeUnit;
 import org.apache.logging.log4j.LogManager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
-import org.testng.annotations.AfterSuite;
-import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
 
 import pageObjects.LogInPage;
 import pageObjects.TasksTabPage;
-import pageObjects.addNewTab;
 import resources.BaseActi;
 import resources.ElementSelector;
 import resources.SendKeysToElement;
+import stepsMethods.CommonTestStepMethods;
 
 public class CommonTest extends BaseActi {
 
+	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+	TasksTabPage TasksTabPage = new TasksTabPage(driver);
+	
+	
+	
 	/*
 	 * author: Shiva Yadv G , Email : shiva.yadav@relanto.ai - Login to Actitime
 	 * application
 	 */
-	@Test
+	@Test(priority = 1)
+	// Log in test
 	public void LoginActiTest() throws IOException, InterruptedException {
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(40));
 		String emailValue = prop.getProperty("email");
 		String passwordValue = prop.getProperty("passwd");
 		ElementSelector ElementSelector = new ElementSelector(driver);
@@ -45,67 +47,61 @@ public class CommonTest extends BaseActi {
 		LogInPage LogInPage = new LogInPage(driver);
 		log = LogManager.getLogger(CommonTest.class.getName());
 
-		// Getting the current date and time
-		Date currentDate = new Date();
-		// Formatting the date and time
-		SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
-		String formattedDateTime = dateFormat.format(currentDate);
-
-		// Log in
-		SendKeysToElement.snedKeysToElementById(LogInPage.userName(), prop.getProperty("userName"));
-		SendKeysToElement.sendKeysToElementByXpath(LogInPage.password(), prop.getProperty("password"));
-		ElementSelector.clickById(LogInPage.logInButton());
-
-		// opening Tasks tab
-		TasksTabPage TasksTabPage = new TasksTabPage(driver);
-		ElementSelector.clickById(TasksTabPage.tasksTab());
-		String ViewTimeTrackPageTabURL = driver.getCurrentUrl();
-		Assert.assertEquals(ViewTimeTrackPageTabURL, "https://online.actitime.com/relanto/tasks/tasklist.do");
-
+		CommonTestStepMethods.login();
+		Thread.sleep(2000);
+		String expectedURL = "https://online.actitime.com/shvia/timetrack/enter.do";
+		String actualURL = driver.getCurrentUrl();
+		Assert.assertEquals(actualURL, expectedURL);
+		log.debug("User succesfully logged in");
+	}
 	
-		// creating new customer
-		ElementSelector.clickByxpath(TasksTabPage.addNewBtn());
-		ElementSelector.clickByxpath(TasksTabPage.newCustomerBtn());
-		SendKeysToElement.sendKeysToElementByXpath(TasksTabPage.enterCustomerNameTextBox(),
-				prop.getProperty("customerName") + formattedDateTime);
-		JavascriptExecutor js = (JavascriptExecutor) driver;
-		js.executeScript("arguments[0].click();", driver.findElement(By.xpath(TasksTabPage.createCustomer())));
-		log.debug("Clicked on create customer button");
-		Thread.sleep(3000);
 
-		// Creating project
-		wait.until(ExpectedConditions.elementToBeClickable(driver.findElement(By.xpath(TasksTabPage.addNewBtn()))));
-		ElementSelector.clickByxpath(TasksTabPage.addNewBtn());
-		log.debug("Clicked on add new button again");
-		wait.until(ExpectedConditions.elementToBeClickable(driver.findElement(By.xpath(TasksTabPage.newProject()))));
-		ElementSelector.clickByxpath(TasksTabPage.newProject());
-		log.debug("clicked on new project");
-		SendKeysToElement.sendKeysToElementByXpath(TasksTabPage.enterProjectName(),
-				prop.getProperty("projectName") + formattedDateTime);
-		log.debug("Entered project name");
-		Actions actions = new Actions(driver);
-		actions.moveToElement(driver.findElement(By.xpath(TasksTabPage.createProject()))).perform();
-		wait.until(ExpectedConditions.elementToBeClickable(driver.findElement(By.xpath(TasksTabPage.createProject()))));
-		ElementSelector.clickByxpath(TasksTabPage.createProject());
-		log.debug("Clicked on create customer button");
 
-		// creating new task
-		actions.moveToElement(driver.findElement(By.xpath(TasksTabPage.addNewBtn()))).perform(); //
-		wait.until(ExpectedConditions.elementToBeClickable(driver.findElement(By.xpath(TasksTabPage.addNewBtn()))));
-		ElementSelector.clickByxpath(TasksTabPage.addNewBtn());
-		log.debug("Clicked on add new button to create new task");
-		ElementSelector.clickByxpath(TasksTabPage.createNewTasks());
-		log.debug("Clicked on create new task");
-		SendKeysToElement.sendKeysToElementByXpath(TasksTabPage.enteringTaskName(),
-				prop.getProperty("taskName") + formattedDateTime);
-		log.debug("Entered Task name");
-		wait.until(ExpectedConditions.elementToBeClickable(driver.findElement(By.xpath(TasksTabPage.createTask()))));
-		ElementSelector.clickByxpath(TasksTabPage.createTask());
-		log.debug("Clicked on create task");
-
-		// Verification
+	/*
+	 * author: Shiva Yadv G , Email : shiva.yadav@relanto.ai - Login to Actitime
+	 * application
+	 */
+	@Test(priority = 2)
+	// Verifying created customer name test
+	public void creatingCustomerTest() throws InterruptedException, IOException {
+//		CommonTestStepMethods.login();
+		CommonTestStepMethods.openigTask();
+		driver.navigate().refresh();
+		CommonTestStepMethods.openigTask();
+		String formattedDateTime = CommonTestStepMethods.creatingCustomer();
 		wait.until(ExpectedConditions
 				.elementToBeClickable(driver.findElement(By.xpath(TasksTabPage.searchCustomerName()))));
+		driver.findElement(By.xpath(TasksTabPage.searchCustomerName())).clear();
+		SendKeysToElement.sendKeysToElementByXpath(TasksTabPage.searchCustomerName(),
+				prop.getProperty("customerName") + formattedDateTime);
+		WebElement searchedCustomerName = driver.findElement(By.xpath(TasksTabPage.firstCustomerName()));
+		wait.until(ExpectedConditions.visibilityOf(searchedCustomerName));
+		String newlyCreatedCustomer = searchedCustomerName.getText();
+		Assert.assertEquals(prop.getProperty("customerName") + formattedDateTime, newlyCreatedCustomer);
+		log.debug("Newly created customer name is verified");
+
+	}
+
+	/*
+	 * author: Shiva Yadv G , Email : shiva.yadav@relanto.ai - Login to Actitime
+	 * application
+	 */
+	@Test(priority = 3)
+	// creating a project and verifying it 
+	public void creatingProjectTest() throws InterruptedException, IOException {
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+//		CommonTestStepMethods.login();
+		CommonTestStepMethods.openigTask();
+		driver.navigate().refresh();
+		CommonTestStepMethods.openigTask();
+		String formattedDateTime = CommonTestStepMethods.creatingCustomer();
+		CommonTestStepMethods.serachingClickingNewlyCreatedCustomer(formattedDateTime);
+		CommonTestStepMethods.creatingProject(formattedDateTime);
+		// Verification
+		Actions actions = new Actions(driver);
+		wait.until(ExpectedConditions
+				.elementToBeClickable(driver.findElement(By.xpath(TasksTabPage.searchCustomerName()))));
+		driver.findElement(By.xpath(TasksTabPage.searchCustomerName())).clear();
 		SendKeysToElement.sendKeysToElementByXpath(TasksTabPage.searchCustomerName(),
 				prop.getProperty("customerName") + formattedDateTime);
 		log.debug("Searched customer name");
@@ -129,6 +125,23 @@ public class CommonTest extends BaseActi {
 			}
 		}
 
+	}
+
+	/*
+	 * author: Shiva Yadv G , Email : shiva.yadav@relanto.ai - Login to Actitime
+	 * application
+	 */
+	@Test(priority = 4)
+	// Creating a task and verifying
+	public void creatingTaskTest() throws InterruptedException, IOException {
+//		CommonTestStepMethods.login();
+		CommonTestStepMethods.openigTask();
+		driver.navigate().refresh();
+		CommonTestStepMethods.openigTask();
+		String formattedDateTime = CommonTestStepMethods.creatingCustomer();
+		CommonTestStepMethods.creatingProject(formattedDateTime);
+		CommonTestStepMethods.serachingClickingNewlyCreatedCustomerCreatingTask(formattedDateTime);
+		CommonTestStepMethods.creatingTask(formattedDateTime);
 		// verifying task list first
 		List<WebElement> tasksNamesListAddedAddNewBtn = driver.findElements(By.xpath(TasksTabPage.tasksList()));
 		for (WebElement tasksNames : tasksNamesListAddedAddNewBtn) {
@@ -138,29 +151,44 @@ public class CommonTest extends BaseActi {
 			else
 				log.debug(prop.getProperty("taskName") + formattedDateTime + " Task is not added");
 		}
-
-		// Adding new task from tasks tab
-		String newSubTask = (prop.getProperty("newTaskName") + formattedDateTime);
-		addNewTab addNewTab = new addNewTab(driver);
-		ElementSelector.clickByxpath(addNewTab.addNewBtn());
-		log.debug("Clicked on add new button ");
-		SendKeysToElement.sendKeysToElementByXpath(addNewTab.addingNewTaskTextBox(), newSubTask);
-		log.debug("Entered new task ");
-		wait.until(ExpectedConditions
-				.elementToBeClickable(driver.findElement(By.xpath(addNewTab.addNewBtnAfterEneteringTask()))));
-		ElementSelector.clickByxpath(addNewTab.addNewBtnAfterEneteringTask());
-		log.debug("Clicked on add new button after entering new task");
-
+	}
+	
+	/*
+	 * author: Shiva Yadv G , Email : shiva.yadav@relanto.ai - Login to Actitime
+	 * application
+	 */
+	@Test(priority = 5)
+	// creating a task from add task button and verifying it
+	public void creatingNewTaskFromTaskTabTest() throws IOException, InterruptedException {
+//		CommonTestStepMethods.login();
+		CommonTestStepMethods.openigTask();
+		driver.navigate().refresh();
+		CommonTestStepMethods.openigTask();
+		String formattedDateTime = CommonTestStepMethods.creatingCustomer(); 
+		CommonTestStepMethods.creatingProject(formattedDateTime);
+		CommonTestStepMethods.serachingClickingNewlyCreatedCustomerCreatingTask(formattedDateTime);
+		CommonTestStepMethods.creatingTask(formattedDateTime);
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+		String newSubTask = CommonTestStepMethods.creatingNewTaskFromAddTaskBtnTab();
+		
 		// Verifying tasks
+		if(driver.findElement(By.xpath(TasksTabPage.viewCustomerProjects())).isDisplayed()) {
+			ElementSelector.clickByxpath(TasksTabPage.viewCustomerProjects());
+			System.out.println("Clicked on view customer projects");
+		}
+		wait.until(ExpectedConditions.elementToBeClickable(By.xpath(TasksTabPage.firstProjectNameAfterAddingSubTask())));
+		ElementSelector.clickByxpath(TasksTabPage.firstProjectNameAfterAddingSubTask());
 		wait.until(ExpectedConditions.numberOfElementsToBe(By.xpath(TasksTabPage.tasksList()), 2));
 		List<WebElement> tasksNamesList = driver.findElements(By.xpath(TasksTabPage.tasksList()));
-		int totalTasksAfterAddingSubTask = tasksNamesList.size();
 		for (WebElement tasksName : tasksNamesList) {
 			String tasksNameString = tasksName.getText().trim();
 			if (tasksNameString.contentEquals(newSubTask)) {
 				Assert.assertEquals(tasksNameString, newSubTask);
+				System.out.println("Newly added sub task " + newSubTask);
 				log.debug("'" + tasksNameString + "'" + " is the new task added");
 			}
 		}
 	}
+
+	
 }

@@ -94,7 +94,7 @@ public class TasksTabPage {
 
 //	private String customerNamesList= "//div[@class='itemsContainer']/descendant::div[contains(@class,'text')]";
 
-	private String firstCustomerNameAfterSearch = "//div[@class='itemsContainer']/div[contains(@class,'selected')]/descendant::div[@class='title']/div[@class='text']";
+	private String firstCustomerNameAfterSearch = "//div[contains(@class,'customerNode')]//following::div[text()='view customer projects']//ancestor::div[@class='itemsContainer']//div[contains(@class,'customerNode')]//div[@class='title']";
 
 	public String firstCustomerNameAfterSearch() {
 		return firstCustomerNameAfterSearch;
@@ -189,6 +189,42 @@ public class TasksTabPage {
 	public String firstNewlyAddedTask() {
 		return firstNewlyAddedTask;
 	}
+	
+	String firstCustomerNameNotSelected = "//div[@class='filteredContainer']//div[@class='itemsContainer']//div[@class='title']";
+	public String firstCustomerNameNotSelected() {
+		return firstCustomerNameNotSelected;
+	}
+	String firstCustomerName = "//div[@class='filteredContainer']//div[@class='itemsContainer']//div[contains(@class,'customerNode')]//div[@class='title']";
+	public String firstCustomerName() {
+		return firstCustomerName;
+	}
+	
+	String firstProjectName = "//div[@class='filteredContainer']//div[@class='itemsContainer']//div[contains(@class,'node projectNode notSelected editable')]//div[@class='title']";
+	public String firstProjectName() {
+		return firstProjectName;
+	}
+	
+		
+	String firstProjectNameAfterAddingSubTask = "//div[@class='filteredContainer']//div[@class='itemsContainer']//div[contains(@class,'node projectNode editable selected')]//div[@class='title']";
+	public String firstProjectNameAfterAddingSubTask() {
+		return firstProjectNameAfterAddingSubTask;
+	}
 	// minimize and maximize
 	// //*[text()='OPEN TASKS']/following::*[@class='projectName' and text()='Flight operations']/..//div[@class='icon']
+
+	String addNewTaskBtn = "//*[@class='rightContainer']//*[text()='Add Task']";
+	public String addNewTaskBtn() {
+		return addNewTaskBtn;
+	}
+	
+	String addingNewTaskTextBox = "/html/body/div[45]/div[1]/div/div[1]/div/div[1]/div/div[2]/div/div[2]/input";
+	public String addingNewTaskTextBox() {
+		return addingNewTaskTextBox;
+	}
+	
+	String addNewBtnAfterEneteringTask = "(//div[@class='buttonsBox']//*[@class='components_button_label'][text()='Add Task'])[2]";
+	public String addNewBtnAfterEneteringTask() {
+		return addNewBtnAfterEneteringTask;
+	}
+	
 }

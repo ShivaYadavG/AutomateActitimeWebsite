@@ -140,7 +140,6 @@ public class tasksListCheckTest extends BaseActi {
 		} 
 		else {
 			List<String> tasks = new ArrayList<>(); // Create a new list for the projects of customer
-
 			// Find all tasks in the project of customer
 			Thread.sleep(3000);
 			List<WebElement> tasksOfCustomerList = driver

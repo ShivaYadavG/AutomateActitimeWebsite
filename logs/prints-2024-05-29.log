@@ -1,0 +1,131 @@
+18:22:47.415 [main] DEBUG test.CommonTest - User succesfully logged in
+18:22:57.793 [main] DEBUG test.CommonTest - Clicked on create customer button
+18:22:58.607 [main] DEBUG test.CommonTest - Newly created customer name is verified
+18:22:59.032 [main] DEBUG test.CommonTest - Clicked on add new button again
+18:22:59.145 [main] DEBUG test.CommonTest - clicked on new project
+18:23:02.415 [main] DEBUG test.CommonTest - Entered project name
+18:23:02.758 [main] DEBUG test.CommonTest - Clicked on create customer button
+18:23:02.955 [main] DEBUG test.CommonTest - Searched customer name
+18:23:05.179 [main] DEBUG test.CommonTest - Clicked on create customer button
+18:23:05.646 [main] DEBUG test.CommonTest - Clicked on add new button again
+18:23:05.820 [main] DEBUG test.CommonTest - clicked on new project
+18:23:09.137 [main] DEBUG test.CommonTest - Entered project name
+18:23:09.394 [main] DEBUG test.CommonTest - Clicked on create customer button
+18:23:11.068 [main] DEBUG test.CommonTest - Clicked on create customer button
+18:23:11.654 [main] DEBUG test.CommonTest - Newly created customer name is verified
+18:23:12.193 [main] DEBUG test.CommonTest - Clicked on add new button again
+18:23:12.277 [main] DEBUG test.CommonTest - clicked on new project
+18:23:15.592 [main] DEBUG test.CommonTest - Entered project name
+18:23:15.818 [main] DEBUG test.CommonTest - Clicked on create customer button
+18:23:16.239 [main] DEBUG test.CommonTest - Clicked on add new button to create new task
+18:23:16.307 [main] DEBUG test.CommonTest - Clicked on create new task
+18:23:17.023 [main] DEBUG test.CommonTest - Entered Task name
+18:23:18.167 [main] DEBUG test.CommonTest - Clicked on add new button 
+18:23:18.475 [main] DEBUG test.CommonTest - Entered new task 
+18:23:19.393 [main] DEBUG test.CommonTest - Clicked on add new button after entering new task
+18:23:29.581 [main] DEBUG test.CommonTest - Web Application closed
+18:23:29.581 [main] DEBUG test.CommonTest - ----------------------------------------------------
+18:25:27.665 [main] DEBUG resources.BaseActi - ----------------------------------------------------
+18:25:27.667 [main] DEBUG resources.BaseActi - Browser initialized
+18:25:35.581 [main] DEBUG resources.BaseActi - Web Applicaton  launched
+18:25:35.860 [main] DEBUG test.CommonTest - User succesfully logged in
+18:25:45.861 [main] DEBUG test.CommonTest - Clicked on create customer button
+18:25:46.696 [main] DEBUG test.CommonTest - Newly created customer name is verified
+18:25:47.178 [main] DEBUG test.CommonTest - Clicked on add new button again
+18:25:47.261 [main] DEBUG test.CommonTest - clicked on new project
+18:25:50.520 [main] DEBUG test.CommonTest - Entered project name
+18:25:50.780 [main] DEBUG test.CommonTest - Clicked on create customer button
+18:25:51.009 [main] DEBUG test.CommonTest - Searched customer name
+18:25:52.242 [main] DEBUG test.CommonTest - Clicked on create customer button
+18:25:52.678 [main] DEBUG test.CommonTest - Clicked on add new button again
+18:25:52.777 [main] DEBUG test.CommonTest - clicked on new project
+18:25:56.023 [main] DEBUG test.CommonTest - Entered project name
+18:25:56.256 [main] DEBUG test.CommonTest - Clicked on create customer button
+18:26:07.544 [main] DEBUG test.CommonTest - Clicked on create customer button
+18:26:07.952 [main] DEBUG test.CommonTest - Newly created customer name is verified
+18:26:08.403 [main] DEBUG test.CommonTest - Clicked on add new button again
+18:26:08.501 [main] DEBUG test.CommonTest - clicked on new project
+18:26:11.750 [main] DEBUG test.CommonTest - Entered project name
+18:26:11.984 [main] DEBUG test.CommonTest - Clicked on create customer button
+18:26:12.438 [main] DEBUG test.CommonTest - Clicked on add new button to create new task
+18:26:12.505 [main] DEBUG test.CommonTest - Clicked on create new task
+18:26:13.116 [main] DEBUG test.CommonTest - Entered Task name
+18:26:14.087 [main] DEBUG test.CommonTest - Clicked on add new button 
+18:26:14.382 [main] DEBUG test.CommonTest - Entered new task 
+18:26:15.705 [main] DEBUG test.CommonTest - Web Application closed
+18:26:15.705 [main] DEBUG test.CommonTest - ----------------------------------------------------
+18:30:40.859 [main] DEBUG resources.BaseActi - ----------------------------------------------------
+18:30:40.862 [main] DEBUG resources.BaseActi - Browser initialized
+18:30:46.477 [main] DEBUG resources.BaseActi - Web Applicaton  launched
+18:30:46.725 [main] DEBUG test.CommonTest - User succesfully logged in
+18:32:15.535 [main] DEBUG test.CommonTest - Clicked on create customer button
+18:32:20.602 [main] DEBUG test.CommonTest - Newly created customer name is verified
+18:34:36.309 [main] DEBUG resources.BaseActi - ----------------------------------------------------
+18:34:36.313 [main] DEBUG resources.BaseActi - Browser initialized
+18:34:42.345 [main] DEBUG resources.BaseActi - Web Applicaton  launched
+18:34:42.591 [main] DEBUG test.CommonTest - User succesfully logged in
+18:34:48.902 [main] DEBUG test.CommonTest - Clicked on create customer button
+18:34:49.748 [main] DEBUG test.CommonTest - Newly created customer name is verified
+18:34:50.182 [main] DEBUG test.CommonTest - Clicked on add new button again
+18:34:50.265 [main] DEBUG test.CommonTest - clicked on new project
+18:34:53.530 [main] DEBUG test.CommonTest - Entered project name
+18:34:53.795 [main] DEBUG test.CommonTest - Clicked on create customer button
+18:34:54.039 [main] DEBUG test.CommonTest - Searched customer name
+18:34:55.253 [main] DEBUG test.CommonTest - Clicked on create customer button
+18:34:55.681 [main] DEBUG test.CommonTest - Clicked on add new button again
+18:34:55.768 [main] DEBUG test.CommonTest - clicked on new project
+18:34:59.040 [main] DEBUG test.CommonTest - Entered project name
+18:34:59.290 [main] DEBUG test.CommonTest - Clicked on create customer button
+18:35:00.579 [main] DEBUG test.CommonTest - Clicked on create customer button
+18:35:00.911 [main] DEBUG test.CommonTest - Newly created customer name is verified
+18:35:01.477 [main] DEBUG test.CommonTest - Clicked on add new button again
+18:35:01.562 [main] DEBUG test.CommonTest - clicked on new project
+18:35:04.809 [main] DEBUG test.CommonTest - Entered project name
+18:35:05.058 [main] DEBUG test.CommonTest - Clicked on create customer button
+18:35:05.578 [main] DEBUG test.CommonTest - Clicked on add new button to create new task
+18:35:05.643 [main] DEBUG test.CommonTest - Clicked on create new task
+18:35:06.224 [main] DEBUG test.CommonTest - Entered Task name
+18:35:07.142 [main] DEBUG test.CommonTest - Clicked on add new button 
+18:35:07.449 [main] DEBUG test.CommonTest - Entered new task 
+18:35:07.965 [main] DEBUG test.CommonTest - Clicked on add new button after entering new task
+18:35:18.160 [main] DEBUG test.CommonTest - Web Application closed
+18:35:18.160 [main] DEBUG test.CommonTest - ----------------------------------------------------
+18:36:34.899 [main] DEBUG resources.BaseActi - ----------------------------------------------------
+18:36:34.902 [main] DEBUG resources.BaseActi - Browser initialized
+18:36:41.526 [main] DEBUG resources.BaseActi - Web Applicaton  launched
+18:36:47.966 [main] DEBUG test.CommonTest - Clicked on create customer button
+18:36:48.398 [main] DEBUG test.CommonTest - Clicked on add new button again
+18:36:48.520 [main] DEBUG test.CommonTest - clicked on new project
+18:36:51.783 [main] DEBUG test.CommonTest - Entered project name
+18:36:52.039 [main] DEBUG test.CommonTest - Clicked on create customer button
+18:37:12.984 [main] DEBUG test.CommonTest - Web Application closed
+18:37:12.985 [main] DEBUG test.CommonTest - ----------------------------------------------------
+18:38:02.879 [main] DEBUG resources.BaseActi - ----------------------------------------------------
+18:38:02.881 [main] DEBUG resources.BaseActi - Browser initialized
+18:38:08.708 [main] DEBUG resources.BaseActi - Web Applicaton  launched
+18:38:15.503 [main] DEBUG test.CommonTest - Clicked on create customer button
+18:38:15.913 [main] DEBUG test.CommonTest - Clicked on add new button again
+18:38:16.029 [main] DEBUG test.CommonTest - clicked on new project
+18:38:19.284 [main] DEBUG test.CommonTest - Entered project name
+18:38:19.527 [main] DEBUG test.CommonTest - Clicked on create customer button
+18:38:40.464 [main] DEBUG test.CommonTest - Web Application closed
+18:38:40.464 [main] DEBUG test.CommonTest - ----------------------------------------------------
+18:39:35.562 [main] DEBUG resources.BaseActi - ----------------------------------------------------
+18:39:35.564 [main] DEBUG resources.BaseActi - Browser initialized
+18:39:42.968 [main] DEBUG resources.BaseActi - Web Applicaton  launched
+18:39:43.265 [main] DEBUG test.CommonTest - User succesfully logged in
+18:39:49.482 [main] DEBUG test.CommonTest - Clicked on create customer button
+18:39:50.305 [main] DEBUG test.CommonTest - Newly created customer name is verified
+18:44:33.421 [main] DEBUG resources.BaseActi - ----------------------------------------------------
+18:44:33.425 [main] DEBUG resources.BaseActi - Browser initialized
+18:44:39.601 [main] DEBUG resources.BaseActi - Web Applicaton  launched
+18:44:46.199 [main] DEBUG test.CommonTest - Clicked on create customer button
+18:44:46.648 [main] DEBUG test.CommonTest - Clicked on add new button again
+18:44:46.747 [main] DEBUG test.CommonTest - clicked on new project
+18:44:50.054 [main] DEBUG test.CommonTest - Entered project name
+18:44:50.331 [main] DEBUG test.CommonTest - Clicked on create customer button
+18:45:11.261 [main] DEBUG test.CommonTest - Web Application closed
+18:45:11.261 [main] DEBUG test.CommonTest - ----------------------------------------------------
+18:47:39.382 [main] DEBUG resources.BaseActi - ----------------------------------------------------
+18:47:39.384 [main] DEBUG resources.BaseActi - Browser initialized
+18:47:44.909 [main] DEBUG resources.BaseActi - Web Applicaton  launched

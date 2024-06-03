@@ -1,122 +1,129 @@
-16:40:01.664 [main] DEBUG resources.BaseActi - Web Applicaton  launched
-16:40:45.299 [main] DEBUG resources.BaseActi - Web Application closed
-16:40:45.300 [main] DEBUG resources.BaseActi - ----------------------------------------------------
-16:42:25.430 [main] DEBUG resources.BaseActi - ----------------------------------------------------
-16:42:25.436 [main] DEBUG resources.BaseActi - Browser initialized
-16:42:41.167 [main] DEBUG resources.BaseActi - Web Applicaton  launched
-16:45:32.140 [main] DEBUG resources.BaseActi - ----------------------------------------------------
-16:45:32.150 [main] DEBUG resources.BaseActi - Browser initialized
-16:45:42.763 [main] DEBUG resources.BaseActi - Web Applicaton  launched
-16:47:04.935 [main] DEBUG resources.BaseActi - ----------------------------------------------------
-16:47:04.940 [main] DEBUG resources.BaseActi - Browser initialized
-16:47:14.695 [main] DEBUG resources.BaseActi - Web Applicaton  launched
-18:06:59.522 [main] DEBUG resources.BaseActi - ----------------------------------------------------
-18:06:59.528 [main] DEBUG resources.BaseActi - Browser initialized
-18:07:10.190 [main] DEBUG resources.BaseActi - Web Applicaton  launched
-18:07:19.086 [main] DEBUG test.CommonTest - Clicked on create customer button
-18:07:22.247 [main] DEBUG test.CommonTest - Clicked on add new button again
-18:07:22.335 [main] DEBUG test.CommonTest - clicked on new project
-18:07:22.923 [main] DEBUG test.CommonTest - Entered project name
-18:07:23.348 [main] DEBUG test.CommonTest - Clicked on create customer button
-18:07:23.823 [main] DEBUG test.CommonTest - Clicked on add new button to create new task
-18:07:23.920 [main] DEBUG test.CommonTest - Clicked on create new task
-18:07:24.599 [main] DEBUG test.CommonTest - Entered Task name
-18:07:24.819 [main] DEBUG test.CommonTest - Clicked on create task
-18:07:25.054 [main] DEBUG test.CommonTest - Searched customer name
-18:07:25.264 [main] DEBUG test.CommonTest - Found the customer name that is : Shiva2024-05-27 18:07:10
-18:07:25.799 [main] DEBUG test.CommonTest - Clicked on customer view customer projects
-18:07:25.916 [main] DEBUG test.CommonTest - Found the project that is : Actitime automation project2024-05-27 18:07:10
-18:07:25.916 [main] DEBUG test.CommonTest - Assertion of project name
-18:07:27.497 [main] DEBUG test.CommonTest - Automate actitime website2024-05-27 18:07:10task is added
-18:07:27.589 [main] DEBUG test.CommonTest - Clicked on add new button 
-18:07:28.085 [main] DEBUG test.CommonTest - Entered new task 
-18:07:28.470 [main] DEBUG test.CommonTest - Clicked on add new button after entering new task
-18:07:29.629 [main] DEBUG test.CommonTest - 'Automate amazon website2024-05-27 18:07:10' is the new task added
-18:07:29.867 [main] DEBUG test.CommonTest - Web Application closed
-18:07:29.867 [main] DEBUG test.CommonTest - ----------------------------------------------------
-19:25:26.571 [main] DEBUG resources.BaseActi - ----------------------------------------------------
-19:25:26.573 [main] DEBUG resources.BaseActi - Browser initialized
-19:25:27.674 [main] DEBUG resources.BaseActi - Web Applicaton  launched
-19:25:36.123 [main] DEBUG resources.BaseActi - ----------------------------------------------------
-19:25:36.126 [main] DEBUG resources.BaseActi - Browser initialized
-19:25:44.499 [main] DEBUG resources.BaseActi - Web Applicaton  launched
-19:25:58.092 [main] DEBUG resources.BaseActi - Web Application closed
-19:25:58.092 [main] DEBUG resources.BaseActi - ----------------------------------------------------
-19:27:10.899 [main] DEBUG resources.BaseActi - ----------------------------------------------------
-19:27:10.901 [main] DEBUG resources.BaseActi - Browser initialized
-19:27:19.523 [main] DEBUG resources.BaseActi - Web Applicaton  launched
-19:29:11.366 [main] DEBUG resources.BaseActi - Web Application closed
-19:29:11.366 [main] DEBUG resources.BaseActi - ----------------------------------------------------
-19:31:23.120 [main] DEBUG resources.BaseActi - ----------------------------------------------------
-19:31:23.124 [main] DEBUG resources.BaseActi - Browser initialized
-19:31:29.347 [main] DEBUG resources.BaseActi - Web Applicaton  launched
-19:31:42.141 [main] DEBUG resources.BaseActi - Web Application closed
-19:31:42.141 [main] DEBUG resources.BaseActi - ----------------------------------------------------
-19:34:00.555 [main] DEBUG resources.BaseActi - ----------------------------------------------------
-19:34:00.558 [main] DEBUG resources.BaseActi - Browser initialized
-19:34:07.809 [main] DEBUG resources.BaseActi - Web Applicaton  launched
-19:37:58.577 [main] DEBUG resources.BaseActi - ----------------------------------------------------
-19:37:58.580 [main] DEBUG resources.BaseActi - Browser initialized
-19:38:04.948 [main] DEBUG resources.BaseActi - Web Applicaton  launched
-19:40:56.609 [main] DEBUG resources.BaseActi - ----------------------------------------------------
-19:40:56.612 [main] DEBUG resources.BaseActi - Browser initialized
-19:41:05.463 [main] DEBUG resources.BaseActi - Web Applicaton  launched
-19:41:21.820 [main] DEBUG resources.BaseActi - Web Application closed
-19:41:21.820 [main] DEBUG resources.BaseActi - ----------------------------------------------------
-09:56:33.043 [main] DEBUG resources.BaseActi - ----------------------------------------------------
-09:56:33.051 [main] DEBUG resources.BaseActi - Browser initialized
-09:56:39.167 [main] DEBUG resources.BaseActi - Web Applicaton  launched
-09:56:54.614 [main] DEBUG resources.BaseActi - Web Application closed
-09:56:54.614 [main] DEBUG resources.BaseActi - ----------------------------------------------------
-09:58:54.242 [main] DEBUG resources.BaseActi - ----------------------------------------------------
-09:58:54.246 [main] DEBUG resources.BaseActi - Browser initialized
-09:58:55.279 [main] DEBUG resources.BaseActi - Web Applicaton  launched
-09:59:17.069 [main] DEBUG resources.BaseActi - Web Application closed
-09:59:17.069 [main] DEBUG resources.BaseActi - ----------------------------------------------------
-10:02:17.223 [main] DEBUG resources.BaseActi - ----------------------------------------------------
-10:02:17.227 [main] DEBUG resources.BaseActi - Browser initialized
-10:02:23.467 [main] DEBUG resources.BaseActi - Web Applicaton  launched
-10:02:46.139 [main] DEBUG resources.BaseActi - Web Application closed
-10:02:46.140 [main] DEBUG resources.BaseActi - ----------------------------------------------------
-10:08:42.016 [main] DEBUG resources.BaseActi - ----------------------------------------------------
-10:08:42.022 [main] DEBUG resources.BaseActi - Browser initialized
-10:08:50.121 [main] DEBUG resources.BaseActi - Web Applicaton  launched
-10:09:04.080 [main] DEBUG resources.BaseActi - Web Application closed
-10:09:04.080 [main] DEBUG resources.BaseActi - ----------------------------------------------------
-10:10:07.990 [main] DEBUG resources.BaseActi - ----------------------------------------------------
-10:10:07.996 [main] DEBUG resources.BaseActi - Browser initialized
-10:10:09.037 [main] DEBUG resources.BaseActi - Web Applicaton  launched
-10:10:34.684 [main] DEBUG resources.BaseActi - Web Application closed
-10:10:34.684 [main] DEBUG resources.BaseActi - ----------------------------------------------------
-10:11:24.414 [main] DEBUG resources.BaseActi - ----------------------------------------------------
-10:11:24.420 [main] DEBUG resources.BaseActi - Browser initialized
-10:11:36.264 [main] DEBUG resources.BaseActi - Web Applicaton  launched
-10:12:11.844 [main] DEBUG resources.BaseActi - Web Application closed
-10:12:11.860 [main] DEBUG resources.BaseActi - ----------------------------------------------------
-10:12:52.295 [main] DEBUG resources.BaseActi - ----------------------------------------------------
-10:12:52.302 [main] DEBUG resources.BaseActi - Browser initialized
-10:12:59.817 [main] DEBUG resources.BaseActi - Web Applicaton  launched
-10:13:25.253 [main] DEBUG resources.BaseActi - Web Application closed
-10:13:25.253 [main] DEBUG resources.BaseActi - ----------------------------------------------------
-10:15:25.754 [main] DEBUG resources.BaseActi - ----------------------------------------------------
-10:15:25.761 [main] DEBUG resources.BaseActi - Browser initialized
-10:15:35.069 [main] DEBUG resources.BaseActi - Web Applicaton  launched
-10:16:00.139 [main] DEBUG resources.BaseActi - Web Application closed
-10:16:00.139 [main] DEBUG resources.BaseActi - ----------------------------------------------------
-10:17:12.870 [main] DEBUG resources.BaseActi - ----------------------------------------------------
-10:17:12.878 [main] DEBUG resources.BaseActi - Browser initialized
-10:17:21.842 [main] DEBUG resources.BaseActi - Web Applicaton  launched
-10:17:39.651 [main] DEBUG resources.BaseActi - Web Application closed
-10:17:39.651 [main] DEBUG resources.BaseActi - ----------------------------------------------------
-10:21:28.857 [main] DEBUG resources.BaseActi - ----------------------------------------------------
-10:21:28.862 [main] DEBUG resources.BaseActi - Browser initialized
-10:21:29.935 [main] DEBUG resources.BaseActi - Web Applicaton  launched
-10:22:00.505 [main] DEBUG resources.BaseActi - Web Application closed
-10:22:00.505 [main] DEBUG resources.BaseActi - ----------------------------------------------------
-10:22:45.044 [main] DEBUG resources.BaseActi - ----------------------------------------------------
-10:22:45.052 [main] DEBUG resources.BaseActi - Browser initialized
-10:22:53.331 [main] DEBUG resources.BaseActi - Web Applicaton  launched
-10:23:02.521 [main] DEBUG resources.BaseActi - Web Application closed
-10:23:02.521 [main] DEBUG resources.BaseActi - ----------------------------------------------------
-10:23:20.152 [main] DEBUG resources.BaseActi - ----------------------------------------------------
-10:23:20.157 [main] DEBUG resources.BaseActi - Browser initialized
+15:52:23.111 [main] DEBUG test.CommonTest - ----------------------------------------------------
+15:53:44.325 [main] DEBUG resources.BaseActi - ----------------------------------------------------
+15:53:44.330 [main] DEBUG resources.BaseActi - Browser initialized
+15:53:50.125 [main] DEBUG resources.BaseActi - Web Applicaton  launched
+15:53:50.458 [main] DEBUG test.CommonTest - Web Application closed
+15:53:50.458 [main] DEBUG test.CommonTest - ----------------------------------------------------
+15:55:07.820 [main] DEBUG resources.BaseActi - ----------------------------------------------------
+15:55:07.824 [main] DEBUG resources.BaseActi - Browser initialized
+15:55:13.836 [main] DEBUG resources.BaseActi - Web Applicaton  launched
+15:55:14.240 [main] DEBUG test.CommonTest - User succesfully logged in
+15:55:22.933 [main] DEBUG test.CommonTest - Clicked on create customer button
+15:55:26.718 [main] DEBUG test.CommonTest - Newly created customer name is verified
+15:55:26.818 [main] DEBUG test.CommonTest - Clicked on add new button again
+15:55:26.880 [main] DEBUG test.CommonTest - clicked on new project
+15:55:27.393 [main] DEBUG test.CommonTest - Entered project name
+15:55:27.806 [main] DEBUG test.CommonTest - Clicked on create customer button
+15:55:27.980 [main] DEBUG test.CommonTest - Searched customer name
+15:55:28.530 [main] DEBUG test.CommonTest - Clicked on add new button to create new task
+15:55:28.581 [main] DEBUG test.CommonTest - Clicked on create new task
+15:55:29.136 [main] DEBUG test.CommonTest - Entered Task name
+15:55:39.631 [main] DEBUG test.CommonTest - Web Application closed
+15:55:39.631 [main] DEBUG test.CommonTest - ----------------------------------------------------
+15:57:30.350 [main] DEBUG resources.BaseActi - ----------------------------------------------------
+15:57:30.355 [main] DEBUG resources.BaseActi - Browser initialized
+15:57:37.485 [main] DEBUG resources.BaseActi - Web Applicaton  launched
+15:57:37.978 [main] DEBUG test.CommonTest - User succesfully logged in
+15:57:45.071 [main] DEBUG test.CommonTest - Clicked on create customer button
+15:57:48.875 [main] DEBUG test.CommonTest - Newly created customer name is verified
+15:57:48.975 [main] DEBUG test.CommonTest - Clicked on add new button again
+15:57:49.123 [main] DEBUG test.CommonTest - clicked on new project
+15:57:49.681 [main] DEBUG test.CommonTest - Entered project name
+15:57:50.089 [main] DEBUG test.CommonTest - Clicked on create customer button
+15:57:50.438 [main] DEBUG test.CommonTest - Searched customer name
+15:57:50.943 [main] DEBUG test.CommonTest - Clicked on add new button to create new task
+15:57:51.039 [main] DEBUG test.CommonTest - Clicked on create new task
+15:57:51.759 [main] DEBUG test.CommonTest - Entered Task name
+15:58:02.278 [main] DEBUG test.CommonTest - Web Application closed
+15:58:02.278 [main] DEBUG test.CommonTest - ----------------------------------------------------
+15:59:09.216 [main] DEBUG resources.BaseActi - ----------------------------------------------------
+15:59:09.222 [main] DEBUG resources.BaseActi - Browser initialized
+15:59:18.227 [main] DEBUG resources.BaseActi - Web Applicaton  launched
+15:59:18.680 [main] DEBUG test.CommonTest - User succesfully logged in
+15:59:26.666 [main] DEBUG test.CommonTest - Clicked on create customer button
+15:59:30.418 [main] DEBUG test.CommonTest - Newly created customer name is verified
+15:59:30.521 [main] DEBUG test.CommonTest - Clicked on add new button again
+15:59:30.587 [main] DEBUG test.CommonTest - clicked on new project
+15:59:31.262 [main] DEBUG test.CommonTest - Entered project name
+15:59:31.706 [main] DEBUG test.CommonTest - Clicked on create customer button
+15:59:31.893 [main] DEBUG test.CommonTest - Searched customer name
+15:59:32.537 [main] DEBUG test.CommonTest - Clicked on add new button to create new task
+15:59:32.655 [main] DEBUG test.CommonTest - Clicked on create new task
+15:59:33.247 [main] DEBUG test.CommonTest - Entered Task name
+15:59:43.642 [main] DEBUG test.CommonTest - Web Application closed
+15:59:43.642 [main] DEBUG test.CommonTest - ----------------------------------------------------
+16:01:03.306 [main] DEBUG resources.BaseActi - ----------------------------------------------------
+16:01:03.312 [main] DEBUG resources.BaseActi - Browser initialized
+16:01:10.977 [main] DEBUG resources.BaseActi - Web Applicaton  launched
+16:01:11.390 [main] DEBUG test.CommonTest - User succesfully logged in
+16:01:18.023 [main] DEBUG test.CommonTest - Clicked on create customer button
+16:01:21.821 [main] DEBUG test.CommonTest - Newly created customer name is verified
+16:01:31.971 [main] DEBUG test.CommonTest - Clicked on add new button again
+16:01:32.058 [main] DEBUG test.CommonTest - clicked on new project
+16:01:32.545 [main] DEBUG test.CommonTest - Entered project name
+16:01:33.044 [main] DEBUG test.CommonTest - Clicked on create customer button
+16:01:33.147 [main] DEBUG test.CommonTest - Searched customer name
+16:01:33.546 [main] DEBUG test.CommonTest - Clicked on add new button to create new task
+16:01:33.777 [main] DEBUG test.CommonTest - Clicked on create new task
+16:01:34.406 [main] DEBUG test.CommonTest - Entered Task name
+16:01:44.689 [main] DEBUG test.CommonTest - Web Application closed
+16:01:44.689 [main] DEBUG test.CommonTest - ----------------------------------------------------
+16:02:48.948 [main] DEBUG resources.BaseActi - ----------------------------------------------------
+16:02:48.952 [main] DEBUG resources.BaseActi - Browser initialized
+16:03:02.183 [main] DEBUG resources.BaseActi - Web Applicaton  launched
+16:03:02.627 [main] DEBUG test.CommonTest - User succesfully logged in
+16:03:11.438 [main] DEBUG test.CommonTest - Clicked on create customer button
+16:03:15.161 [main] DEBUG test.CommonTest - Newly created customer name is verified
+16:03:25.423 [main] DEBUG test.CommonTest - Clicked on add new button again
+16:03:25.549 [main] DEBUG test.CommonTest - clicked on new project
+16:03:26.098 [main] DEBUG test.CommonTest - Entered project name
+16:03:26.383 [main] DEBUG test.CommonTest - Clicked on create customer button
+16:03:26.630 [main] DEBUG test.CommonTest - Searched customer name
+16:03:27.146 [main] DEBUG test.CommonTest - Clicked on add new button to create new task
+16:03:27.223 [main] DEBUG test.CommonTest - Clicked on create new task
+16:03:27.653 [main] DEBUG test.CommonTest - Entered Task name
+16:03:37.979 [main] DEBUG test.CommonTest - Web Application closed
+16:03:37.979 [main] DEBUG test.CommonTest - ----------------------------------------------------
+16:16:24.618 [main] DEBUG resources.BaseActi - ----------------------------------------------------
+16:16:24.624 [main] DEBUG resources.BaseActi - Browser initialized
+16:16:35.771 [main] DEBUG resources.BaseActi - Web Applicaton  launched
+16:16:43.511 [main] DEBUG test.CommonTest - Web Application closed
+16:16:43.511 [main] DEBUG test.CommonTest - ----------------------------------------------------
+16:18:14.386 [main] DEBUG resources.BaseActi - ----------------------------------------------------
+16:18:14.392 [main] DEBUG resources.BaseActi - Browser initialized
+16:18:24.046 [main] DEBUG resources.BaseActi - Web Applicaton  launched
+16:18:24.469 [main] DEBUG test.CommonTest - User succesfully logged in
+16:18:33.452 [main] DEBUG test.CommonTest - Clicked on create customer button
+16:18:37.213 [main] DEBUG test.CommonTest - Newly created customer name is verified
+16:18:47.375 [main] DEBUG test.CommonTest - Clicked on add new button again
+16:18:47.449 [main] DEBUG test.CommonTest - clicked on new project
+16:18:47.854 [main] DEBUG test.CommonTest - Entered project name
+16:18:48.455 [main] DEBUG test.CommonTest - Clicked on create customer button
+16:18:48.581 [main] DEBUG test.CommonTest - Searched customer name
+16:18:49.142 [main] DEBUG test.CommonTest - Clicked on add new button to create new task
+16:18:49.245 [main] DEBUG test.CommonTest - Clicked on create new task
+16:18:49.706 [main] DEBUG test.CommonTest - Entered Task name
+16:19:00.294 [main] DEBUG test.CommonTest - Web Application closed
+16:19:00.294 [main] DEBUG test.CommonTest - ----------------------------------------------------
+16:19:22.752 [main] DEBUG resources.BaseActi - ----------------------------------------------------
+16:19:22.756 [main] DEBUG resources.BaseActi - Browser initialized
+16:19:35.360 [main] DEBUG resources.BaseActi - Web Applicaton  launched
+16:19:44.064 [main] DEBUG test.CommonTest - Web Application closed
+16:19:44.064 [main] DEBUG test.CommonTest - ----------------------------------------------------
+16:21:07.936 [main] DEBUG resources.BaseActi - ----------------------------------------------------
+16:21:07.940 [main] DEBUG resources.BaseActi - Browser initialized
+16:21:17.803 [main] DEBUG resources.BaseActi - Web Applicaton  launched
+16:21:36.270 [main] DEBUG test.CommonTest - Clicked on add new button 
+16:21:36.503 [main] DEBUG test.CommonTest - Entered new task 
+16:21:37.131 [main] DEBUG test.CommonTest - Clicked on add new button after entering new task
+16:21:37.331 [main] DEBUG test.CommonTest - Web Application closed
+16:21:37.331 [main] DEBUG test.CommonTest - ----------------------------------------------------
+16:22:57.569 [main] DEBUG resources.BaseActi - ----------------------------------------------------
+16:22:57.573 [main] DEBUG resources.BaseActi - Browser initialized
+16:23:04.586 [main] DEBUG resources.BaseActi - Web Applicaton  launched
+16:23:05.024 [main] DEBUG test.CommonTest - User succesfully logged in
+16:23:13.631 [main] DEBUG test.CommonTest - Clicked on create customer button
+16:23:17.408 [main] DEBUG test.CommonTest - Newly created customer name is verified
+16:23:57.757 [main] DEBUG test.CommonTest - Clicked on add new button again
+16:23:57.850 [main] DEBUG test.CommonTest - clicked on new project
+16:23:58.545 [main] DEBUG test.CommonTest - Entered project name

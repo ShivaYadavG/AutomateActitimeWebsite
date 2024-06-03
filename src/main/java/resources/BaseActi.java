@@ -3,7 +3,9 @@ package resources;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.text.SimpleDateFormat;
 import java.time.Duration;
+import java.util.Date;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
@@ -16,6 +18,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
@@ -25,19 +28,17 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 import pageObjects.TasksTabPage;
 
 public class BaseActi {
-	public WebDriver driver;
-	public Properties prop;
-	public Logger log;
+	public static WebDriver driver;
+	public static Properties prop;
+	public static Logger log;
 
-	public WebDriver initializeActiBrowser() throws IOException {
-		
+	public static WebDriver initializeActiBrowser() throws IOException {
 		
 		prop = new Properties();
 		String propertiesPath = System.getProperty("user.dir") + "\\src\\main\\java\\resources\\data.properties";
 		System.out.println(propertiesPath);
 		FileInputStream fis = new FileInputStream(propertiesPath);
 		prop.load(fis);
-
 
 		String browserName = prop.getProperty("browser");
 
@@ -57,7 +58,7 @@ public class BaseActi {
 			driver = new EdgeDriver();
 
 		}
-
+		Actions actions = new Actions(driver);
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);

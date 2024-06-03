@@ -22,6 +22,28 @@ import resources.ElementSelector;
 import resources.SendKeysToElement;
 
 public class customerTest extends BaseActi {
+	// Getting the current date and time
+	Date currentDate = new Date();
+	// Formatting the date and time
+	SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+	String formattedDateTime = dateFormat.format(currentDate);
+	TasksTabPage TasksTabPage = new TasksTabPage(driver);
+	LogInPage LogInPage = new LogInPage(driver);
+
+	public void login() {
+
+		// Log in
+		SendKeysToElement.snedKeysToElementById(LogInPage.userName(), prop.getProperty("userName"));
+		SendKeysToElement.sendKeysToElementByXpath(LogInPage.password(), prop.getProperty("password"));
+		ElementSelector.clickById(LogInPage.logInButton());
+	}
+	
+	public void openingTask() {
+		// opening Tasks tab
+				ElementSelector.clickById(TasksTabPage.tasksTab());
+				String ViewTimeTrackPageTabURL = driver.getCurrentUrl();
+				Assert.assertEquals(ViewTimeTrackPageTabURL, "https://online.actitime.com/relanto/tasks/tasklist.do");
+	}
 
 	/*
 	 * author: Shiva Yadv G , Email : shiva.yadav@relanto.ai - Login to Actitime
@@ -37,23 +59,9 @@ public class customerTest extends BaseActi {
 		SendKeysToElement SendKeysToElement = new SendKeysToElement(driver);
 		LogInPage LogInPage = new LogInPage(driver);
 		log = LogManager.getLogger(CommonTest.class.getName());
-
-		// Getting the current date and time
-		Date currentDate = new Date();
-		// Formatting the date and time
-		SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
-		String formattedDateTime = dateFormat.format(currentDate);
-
-		// Log in
-		SendKeysToElement.snedKeysToElementById(LogInPage.userName(), prop.getProperty("userName"));
-		SendKeysToElement.sendKeysToElementByXpath(LogInPage.password(), prop.getProperty("password"));
-		ElementSelector.clickById(LogInPage.logInButton());
-
-		// opening Tasks tab
-		TasksTabPage TasksTabPage = new TasksTabPage(driver);
-		ElementSelector.clickById(TasksTabPage.tasksTab());
-		String ViewTimeTrackPageTabURL = driver.getCurrentUrl();
-		Assert.assertEquals(ViewTimeTrackPageTabURL, "https://online.actitime.com/relanto/tasks/tasklist.do");
+		
+		login();
+		openingTask();
 
 		// creating new customer
 		String customerName = prop.getProperty("customerName") + formattedDateTime;
@@ -88,22 +96,25 @@ public class customerTest extends BaseActi {
 		SendKeysToElement.sendKeysToElementByXpath(TasksTabPage.searchCustomerName(), newCustomerName);
 		ElementSelector.clickByxpath(TasksTabPage.firstCustomerNameAfterSearch());
 		wait.until(ExpectedConditions.elementToBeClickable(By.xpath(TasksTabPage.firstCustomerNameAfterSearch())));
-		String searchedCustomerAfterEdit = driver.findElement(By.xpath(TasksTabPage.firstCustomerNameAfterSearch())).getText();
+		String searchedCustomerAfterEdit = driver.findElement(By.xpath(TasksTabPage.firstCustomerNameAfterSearch()))
+				.getText();
 		Assert.assertEquals(newCustomerName, searchedCustomerAfterEdit);
 		log.debug(newCustomerName + " is present in the customer list after edit");
 
 		// deleting edited customer
 		wait.until(ExpectedConditions.elementToBeClickable(driver.findElement(By.xpath(TasksTabPage.editIcon()))));
 		ElementSelector.clickByxpath(TasksTabPage.editIcon());
-		wait.until(ExpectedConditions.elementToBeClickable(driver.findElement(By.xpath(TasksTabPage.actionDropDown()))));
+		wait.until(
+				ExpectedConditions.elementToBeClickable(driver.findElement(By.xpath(TasksTabPage.actionDropDown()))));
 		ElementSelector.clickByxpath(TasksTabPage.actionDropDown());
 		ElementSelector.clickByxpath(TasksTabPage.delteBtn());
 		ElementSelector.clickByxpath(TasksTabPage.deletPermanentlyBtn());
 		log.debug(" customer name : " + newCustomerName + " is deleted");
-		
+
 		// verifying whether customer is deleted or not
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(TasksTabPage.noCustomerPresentLable())));
-		boolean isnoCustomerPresentLableDisplayed = driver.findElement(By.xpath(TasksTabPage.noCustomerPresentLable())).isDisplayed();
+		boolean isnoCustomerPresentLableDisplayed = driver.findElement(By.xpath(TasksTabPage.noCustomerPresentLable()))
+				.isDisplayed();
 		Assert.assertTrue(isnoCustomerPresentLableDisplayed);
 		log.debug(newCustomerName + " is deleted");
 
