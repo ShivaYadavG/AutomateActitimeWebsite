@@ -3,13 +3,36 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test name="Test(failed)">
     <classes>
-      <class name="test.DeletCustomer">
+      <class name="test.tasksListCheckTest">
+        <methods>
+          <include name="totalTasksTest"/>
+          <include name="launching"/>
+          <include name="closure"/>
+        </methods>
+      </class> <!-- test.tasksListCheckTest -->
+      <class name="test.customerTest">
         <methods>
           <include name="launching"/>
           <include name="closure"/>
-          <include name="DeleteCustomer"/>
+          <include name="deletingCustomer"/>
         </methods>
-      </class> <!-- test.DeletCustomer -->
+      </class> <!-- test.customerTest -->
+      <class name="test.CommonTest">
+        <methods>
+          <include name="creatingNewTaskFromTaskTabTest"/>
+          <include name="creatingProjectTest"/>
+          <include name="launching"/>
+          <include name="closure"/>
+          <include name="creatingTaskTest"/>
+        </methods>
+      </class> <!-- test.CommonTest -->
+      <class name="test.Deleting_Task_Test">
+        <methods>
+          <include name="delete_VerifyTest"/>
+          <include name="launching"/>
+          <include name="closure"/>
+        </methods>
+      </class> <!-- test.Deleting_Task_Test -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

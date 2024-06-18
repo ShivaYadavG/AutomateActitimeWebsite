@@ -1,6 +1,5 @@
 package test;
 
-
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.time.Duration;
@@ -17,6 +16,7 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
+import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
 
 import pageObjects.LogInPage;
@@ -30,67 +30,38 @@ public class CommonTest extends BaseActi {
 
 	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
 	TasksTabPage TasksTabPage = new TasksTabPage(driver);
-	
-	
-	
+
 	/*
 	 * author: Shiva Yadv G , Email : shiva.yadav@relanto.ai - Login to Actitime
-	 * application
+	 * Create a customer and verify 
 	 */
 	@Test(priority = 1)
-	// Log in test
-	public void LoginActiTest() throws IOException, InterruptedException {
-		String emailValue = prop.getProperty("email");
-		String passwordValue = prop.getProperty("passwd");
-		ElementSelector ElementSelector = new ElementSelector(driver);
-		SendKeysToElement SendKeysToElement = new SendKeysToElement(driver);
-		LogInPage LogInPage = new LogInPage(driver);
-		log = LogManager.getLogger(CommonTest.class.getName());
-
-		CommonTestStepMethods.login();
-		Thread.sleep(2000);
-		String expectedURL = "https://online.actitime.com/shvia/timetrack/enter.do";
-		String actualURL = driver.getCurrentUrl();
-		Assert.assertEquals(actualURL, expectedURL);
-		log.debug("User succesfully logged in");
-	}
-	
-
-
-	/*
-	 * author: Shiva Yadv G , Email : shiva.yadav@relanto.ai - Login to Actitime
-	 * application
-	 */
-	@Test(priority = 2)
-	// Verifying created customer name test
+	// Crate a customer and verify it 
 	public void creatingCustomerTest() throws InterruptedException, IOException {
-//		CommonTestStepMethods.login();
+		driver.navigate().refresh();
 		CommonTestStepMethods.openigTask();
 		driver.navigate().refresh();
 		CommonTestStepMethods.openigTask();
 		String formattedDateTime = CommonTestStepMethods.creatingCustomer();
-		wait.until(ExpectedConditions
-				.elementToBeClickable(driver.findElement(By.xpath(TasksTabPage.searchCustomerName()))));
-		driver.findElement(By.xpath(TasksTabPage.searchCustomerName())).clear();
-		SendKeysToElement.sendKeysToElementByXpath(TasksTabPage.searchCustomerName(),
-				prop.getProperty("customerName") + formattedDateTime);
-		WebElement searchedCustomerName = driver.findElement(By.xpath(TasksTabPage.firstCustomerName()));
-		wait.until(ExpectedConditions.visibilityOf(searchedCustomerName));
-		String newlyCreatedCustomer = searchedCustomerName.getText();
-		Assert.assertEquals(prop.getProperty("customerName") + formattedDateTime, newlyCreatedCustomer);
-		log.debug("Newly created customer name is verified");
-
+		TasksTabPage TasksTabPage = new TasksTabPage(driver);
+		CommonTestStepMethods.serachingClickingNewlyCreatedCustomer(formattedDateTime);
+		String searchedCustomer = driver.findElement(By.xpath(
+				"//div[@class='filteredContainer']//div[@class='itemsContainer']//div[contains(@class,'customerNode')]//div[@class='title']//div[@class='text']"))
+				.getText();
+		System.out.println("Searched customer = " + searchedCustomer);
+		String customerName = prop.getProperty("customerName") + formattedDateTime;
+		System.out.println("Actual customer = " + customerName);
+		Assert.assertEquals(customerName, searchedCustomer);
 	}
 
 	/*
 	 * author: Shiva Yadv G , Email : shiva.yadav@relanto.ai - Login to Actitime
-	 * application
+	 * creating a project and verifying it
 	 */
-	@Test(priority = 3)
-	// creating a project and verifying it 
+	@Test(priority = 2)
 	public void creatingProjectTest() throws InterruptedException, IOException {
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-//		CommonTestStepMethods.login();
+		driver.navigate().refresh();
 		CommonTestStepMethods.openigTask();
 		driver.navigate().refresh();
 		CommonTestStepMethods.openigTask();
@@ -124,71 +95,107 @@ public class CommonTest extends BaseActi {
 				break;
 			}
 		}
-
 	}
 
 	/*
 	 * author: Shiva Yadv G , Email : shiva.yadav@relanto.ai - Login to Actitime
-	 * application
+	 * Creating a task and verifying
 	 */
-	@Test(priority = 4)
-	// Creating a task and verifying
+	@Test(priority = 3)
 	public void creatingTaskTest() throws InterruptedException, IOException {
-//		CommonTestStepMethods.login();
+		driver.navigate().refresh();
 		CommonTestStepMethods.openigTask();
 		driver.navigate().refresh();
 		CommonTestStepMethods.openigTask();
 		String formattedDateTime = CommonTestStepMethods.creatingCustomer();
 		CommonTestStepMethods.creatingProject(formattedDateTime);
-		CommonTestStepMethods.serachingClickingNewlyCreatedCustomerCreatingTask(formattedDateTime);
+		CommonTestStepMethods.serachingClickingNewlyCreatedCustomerFirstProject(formattedDateTime);
 		CommonTestStepMethods.creatingTask(formattedDateTime);
+		driver.navigate().refresh();
+		CommonTestStepMethods.serachingClickingNewlyCreatedCustomer(formattedDateTime);
 		// verifying task list first
-		List<WebElement> tasksNamesListAddedAddNewBtn = driver.findElements(By.xpath(TasksTabPage.tasksList()));
-		for (WebElement tasksNames : tasksNamesListAddedAddNewBtn) {
-			String tasksNameString = tasksNames.getText();
-			if (tasksNameString.equalsIgnoreCase(prop.getProperty("taskName") + formattedDateTime))
-				log.debug(tasksNameString + "task is added");
-			else
-				log.debug(prop.getProperty("taskName") + formattedDateTime + " Task is not added");
-		}
+		String cretedTask = driver.findElement(By.xpath(TasksTabPage.tasksList())).getText();
+		Assert.assertEquals(prop.getProperty("taskName") + formattedDateTime, cretedTask);
 	}
-	
+
 	/*
 	 * author: Shiva Yadv G , Email : shiva.yadav@relanto.ai - Login to Actitime
-	 * application
+	 *  creating a task from add task button and verifying it
 	 */
-	@Test(priority = 5)
-	// creating a task from add task button and verifying it
+	@Test(priority = 4)
 	public void creatingNewTaskFromTaskTabTest() throws IOException, InterruptedException {
-//		CommonTestStepMethods.login();
+		driver.navigate().refresh();
 		CommonTestStepMethods.openigTask();
 		driver.navigate().refresh();
 		CommonTestStepMethods.openigTask();
-		String formattedDateTime = CommonTestStepMethods.creatingCustomer(); 
+		String formattedDateTime = CommonTestStepMethods.creatingCustomer();
 		CommonTestStepMethods.creatingProject(formattedDateTime);
-		CommonTestStepMethods.serachingClickingNewlyCreatedCustomerCreatingTask(formattedDateTime);
+		CommonTestStepMethods.serachingClickingNewlyCreatedCustomerFirstProject(formattedDateTime);
 		CommonTestStepMethods.creatingTask(formattedDateTime);
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
-		String newSubTask = CommonTestStepMethods.creatingNewTaskFromAddTaskBtnTab();
-		
-		// Verifying tasks
-		if(driver.findElement(By.xpath(TasksTabPage.viewCustomerProjects())).isDisplayed()) {
-			ElementSelector.clickByxpath(TasksTabPage.viewCustomerProjects());
-			System.out.println("Clicked on view customer projects");
-		}
-		wait.until(ExpectedConditions.elementToBeClickable(By.xpath(TasksTabPage.firstProjectNameAfterAddingSubTask())));
-		ElementSelector.clickByxpath(TasksTabPage.firstProjectNameAfterAddingSubTask());
-		wait.until(ExpectedConditions.numberOfElementsToBe(By.xpath(TasksTabPage.tasksList()), 2));
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(40));
+		String newSubTask = CommonTestStepMethods.creatingNewTaskFromAddTaskBtnTab(formattedDateTime);
+		driver.navigate().refresh();
+		CommonTestStepMethods.serachingClickingNewlyCreatedCustomer(formattedDateTime);
+		driver.navigate().refresh();
+		CommonTestStepMethods.serachingClickingNewlyCreatedCustomerFirstProject(formattedDateTime);
 		List<WebElement> tasksNamesList = driver.findElements(By.xpath(TasksTabPage.tasksList()));
 		for (WebElement tasksName : tasksNamesList) {
 			String tasksNameString = tasksName.getText().trim();
+
 			if (tasksNameString.contentEquals(newSubTask)) {
+				System.out.println("'" + tasksNameString + "'" + " is the new task added");
 				Assert.assertEquals(tasksNameString, newSubTask);
-				System.out.println("Newly added sub task " + newSubTask);
 				log.debug("'" + tasksNameString + "'" + " is the new task added");
 			}
 		}
 	}
-
 	
+	/*
+	 * author: Shiva Yadv G , Email : shiva.yadav@relanto.ai - Login to Actitime application
+	 * Edit the created customer name and verify it
+	 */
+	@Test(priority = 5)
+	public void editinCustomerNameTest() throws InterruptedException {
+		 WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+			driver.navigate().refresh();
+		CommonTestStepMethods.openigTask();
+		driver.navigate().refresh();
+		CommonTestStepMethods.openigTask();
+		String formattedDateTime = CommonTestStepMethods.creatingCustomer();
+		String newCustomerName = CommonTestStepMethods.editingCustomerName(formattedDateTime);
+		 TasksTabPage TasksTabPage = new TasksTabPage(driver);
+			
+		// Verifying edited customer name
+		driver.findElement(By.xpath(TasksTabPage.searchCustomerName())).clear();
+		SendKeysToElement.sendKeysToElementByXpath(TasksTabPage.searchCustomerName(), newCustomerName);
+		wait.until(ExpectedConditions.elementToBeClickable(By.xpath(TasksTabPage.firstCustomerNameNotSelected())));
+		ElementSelector.clickByxpath(TasksTabPage.firstCustomerNameNotSelected());
+		String searchedCustomerAfterEdit = driver.findElement(By.xpath(TasksTabPage.firstCustomerNameNotSelected())).getText();
+		Assert.assertEquals(newCustomerName, searchedCustomerAfterEdit);
+		log.debug(newCustomerName + " is present in the customer list after edit");
+	}
+	
+	/*
+	 * author: Shiva Yadv G , Email : shiva.yadav@relanto.ai - Login to Actitime application
+	 * Deleting a created customer and verifying
+	 */
+	@Test(priority = 6)
+	public void deletingCustomerTest() throws InterruptedException {
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+		driver.navigate().refresh();
+		CommonTestStepMethods.openigTask();
+		driver.navigate().refresh();
+		CommonTestStepMethods.openigTask();
+		String formattedDateTime = CommonTestStepMethods.creatingCustomer();
+		String newCustomerName = CommonTestStepMethods.editingCustomerName(formattedDateTime);
+		CommonTestStepMethods.deletingEditedCustomer(newCustomerName);
+		 TasksTabPage TasksTabPage = new TasksTabPage(driver);
+		
+		// verifying whether customer is deleted or not
+		SendKeysToElement.sendKeysToElementByXpath(TasksTabPage.searchCustomerName(), newCustomerName);
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(TasksTabPage.noCustomerPresentLable())));
+		boolean isnoCustomerPresentLableDisplayed = driver.findElement(By.xpath(TasksTabPage.noCustomerPresentLable())).isDisplayed();
+		Assert.assertTrue(isnoCustomerPresentLableDisplayed);
+		log.debug(newCustomerName + " is deleted");
+	}
 }

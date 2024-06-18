@@ -19,12 +19,12 @@ public class LogInPage{
 		return CreateCustomer;
 	}
 	
-	private String userName = "username";
+	private String userName = "//*[@id='loginFormContainer']//input[@id='username']";
 	public String userName() {
 		return userName;
 	}
 	
-	private String password = "//*[@id=\"loginFormContainer\"]/tbody/tr[1]/td/table/tbody/tr[2]/td/input";
+	private String password = "//*[@id='loginFormContainer']/tbody/tr[1]/td/table/tbody/tr[2]/td/input";
 	public String password() {
 		return password;
 	}

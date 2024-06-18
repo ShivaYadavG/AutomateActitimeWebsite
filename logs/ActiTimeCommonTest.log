@@ -1,54 +1,30 @@
-18:10:26.778 [main] DEBUG test.CommonTest - 'Automate amazon website2024-06-03 18:09:09' is the new task added
-18:10:27.027 [main] DEBUG test.CommonTest - Web Application closed
-18:10:27.027 [main] DEBUG test.CommonTest - ----------------------------------------------------
-18:10:34.298 [main] DEBUG resources.BaseActi - ----------------------------------------------------
-18:10:34.303 [main] DEBUG resources.BaseActi - Browser initialized
-18:10:53.251 [main] DEBUG resources.BaseActi - Web Applicaton  launched
-18:11:05.986 [main] DEBUG test.CommonTest - Clicked on create customer button
-18:11:06.629 [main] DEBUG test.CommonTest - Clicked on add new button again
-18:11:06.743 [main] DEBUG test.CommonTest - clicked on new project
-18:11:10.010 [main] DEBUG test.CommonTest - Entered project name
-18:11:10.343 [main] DEBUG test.CommonTest - Clicked on create customer button
-18:11:11.819 [main] DEBUG test.CommonTest - Clicked on add new button to create new task
-18:11:11.908 [main] DEBUG test.CommonTest - Clicked on create new task
-18:11:12.584 [main] DEBUG test.CommonTest - Entered Task name
-18:11:13.858 [main] DEBUG test.CommonTest - Clicked on add new button 
-18:11:14.152 [main] DEBUG test.CommonTest - Entered new task 
-18:11:14.801 [main] DEBUG test.CommonTest - Clicked on add new button after entering new task
-18:11:17.266 [main] DEBUG test.CommonTest - 'Automate amazon website2024-06-03 18:11:12' is the new task added
-18:11:17.500 [main] DEBUG test.CommonTest - Web Application closed
-18:11:17.500 [main] DEBUG test.CommonTest - ----------------------------------------------------
-18:11:39.597 [main] DEBUG resources.BaseActi - ----------------------------------------------------
-18:11:39.604 [main] DEBUG resources.BaseActi - Browser initialized
-18:11:52.235 [main] DEBUG resources.BaseActi - Web Applicaton  launched
-18:11:58.732 [main] DEBUG test.CommonTest - User succesfully logged in
-18:12:03.930 [main] DEBUG test.CommonTest - Clicked on create customer button
-18:12:04.846 [main] DEBUG test.CommonTest - Newly created customer name is verified
-18:12:07.123 [main] DEBUG test.CommonTest - Clicked on create customer button
-18:12:08.395 [main] DEBUG test.CommonTest - Clicked on add new button again
-18:12:08.484 [main] DEBUG test.CommonTest - clicked on new project
-18:12:11.810 [main] DEBUG test.CommonTest - Entered project name
-18:12:12.060 [main] DEBUG test.CommonTest - Clicked on create customer button
-18:12:12.278 [main] DEBUG test.CommonTest - Searched customer name
-18:12:14.870 [main] DEBUG test.CommonTest - Clicked on create customer button
-18:12:15.408 [main] DEBUG test.CommonTest - Clicked on add new button again
-18:12:15.549 [main] DEBUG test.CommonTest - clicked on new project
-18:12:18.909 [main] DEBUG test.CommonTest - Entered project name
-18:12:19.268 [main] DEBUG test.CommonTest - Clicked on create customer button
-18:12:20.692 [main] DEBUG test.CommonTest - Clicked on add new button to create new task
-18:12:20.794 [main] DEBUG test.CommonTest - Clicked on create new task
-18:12:21.409 [main] DEBUG test.CommonTest - Entered Task name
-18:12:34.218 [main] DEBUG test.CommonTest - Clicked on create customer button
-18:12:34.657 [main] DEBUG test.CommonTest - Clicked on add new button again
-18:12:34.812 [main] DEBUG test.CommonTest - clicked on new project
-18:12:38.061 [main] DEBUG test.CommonTest - Entered project name
-18:12:38.301 [main] DEBUG test.CommonTest - Clicked on create customer button
-18:12:39.523 [main] DEBUG test.CommonTest - Clicked on add new button to create new task
-18:12:39.581 [main] DEBUG test.CommonTest - Clicked on create new task
-18:12:40.182 [main] DEBUG test.CommonTest - Entered Task name
-18:12:41.474 [main] DEBUG test.CommonTest - Clicked on add new button 
-18:12:41.853 [main] DEBUG test.CommonTest - Entered new task 
-18:12:42.437 [main] DEBUG test.CommonTest - Clicked on add new button after entering new task
-18:12:44.423 [main] DEBUG test.CommonTest - 'Automate amazon website2024-06-03 18:12:40' is the new task added
-18:12:44.612 [main] DEBUG test.CommonTest - Web Application closed
-18:12:44.613 [main] DEBUG test.CommonTest - ----------------------------------------------------
+16:13:35.075 [main] DEBUG resources.BaseActi - Clicked on add new button to create new task
+16:13:35.131 [main] DEBUG resources.BaseActi - Clicked on create new task
+16:13:36.078 [main] DEBUG resources.BaseActi - Entered Task name
+16:13:42.722 [main] DEBUG resources.BaseActi - Clicked on create customer button
+16:13:43.077 [main] DEBUG resources.BaseActi - Clicked on add new button again
+16:13:43.205 [main] DEBUG resources.BaseActi - clicked on new project
+16:13:44.423 [main] DEBUG resources.BaseActi - Entered project name
+16:13:44.709 [main] DEBUG resources.BaseActi - Clicked on create customer button
+16:13:46.194 [main] DEBUG resources.BaseActi - Clicked on add new button to create new task
+16:13:46.250 [main] DEBUG resources.BaseActi - Clicked on create new task
+16:13:47.122 [main] DEBUG resources.BaseActi - Entered Task name
+16:13:48.244 [main] DEBUG resources.BaseActi - Clicked on add new button 
+16:13:48.570 [main] DEBUG resources.BaseActi - Entered new task 
+16:13:49.101 [main] DEBUG resources.BaseActi - Clicked on add new button after entering new task
+16:13:52.608 [main] DEBUG resources.BaseActi - 'Automate amazon website2024-06-18 16:13:41' is the new task added
+16:13:52.823 [main] DEBUG resources.BaseActi - Web Application closed
+16:13:52.823 [main] DEBUG resources.BaseActi - ----------------------------------------------------
+16:19:22.800 [main] DEBUG resources.BaseActi - ----------------------------------------------------
+16:19:22.807 [main] DEBUG resources.BaseActi - Browser initialized
+16:19:32.912 [main] DEBUG resources.BaseActi - Web Applicaton  launched
+16:19:44.437 [main] DEBUG resources.BaseActi - Clicked on create customer button
+16:19:44.978 [main] DEBUG resources.BaseActi - Clicked on add new button again
+16:19:45.067 [main] DEBUG resources.BaseActi - clicked on new project
+16:19:46.354 [main] DEBUG resources.BaseActi - Entered project name
+16:19:46.619 [main] DEBUG resources.BaseActi - Clicked on create customer button
+16:19:47.068 [main] DEBUG resources.BaseActi - Clicked on add new button to create new task
+16:19:47.121 [main] DEBUG resources.BaseActi - Clicked on create new task
+16:19:48.111 [main] DEBUG resources.BaseActi - Entered Task name
+16:19:54.527 [main] DEBUG resources.BaseActi - Web Application closed
+16:19:54.527 [main] DEBUG resources.BaseActi - ----------------------------------------------------

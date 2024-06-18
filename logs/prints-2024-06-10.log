@@ -1,0 +1,131 @@
+18:40:52.067 [main] DEBUG resources.BaseActi - Clicked on old customer name lable to edit
+18:40:54.372 [main] DEBUG resources.BaseActi - Edited customer name
+18:40:55.310 [main] DEBUG resources.BaseActi -  customer name : lenova;2024-06-10 18:40:48 is deleted
+18:40:56.060 [main] DEBUG resources.BaseActi - lenova;2024-06-10 18:40:48 is deleted
+18:40:56.229 [main] DEBUG resources.BaseActi - Web Application closed
+18:40:56.229 [main] DEBUG resources.BaseActi - ----------------------------------------------------
+18:41:05.589 [main] DEBUG resources.BaseActi - ----------------------------------------------------
+18:41:05.592 [main] DEBUG resources.BaseActi - Browser initialized
+18:41:10.860 [main] DEBUG resources.BaseActi - Web Applicaton  launched
+18:41:50.456 [main] DEBUG resources.BaseActi - Total number of tasks are verified
+18:41:50.583 [main] DEBUG resources.BaseActi - Web Application closed
+18:41:50.583 [main] DEBUG resources.BaseActi - ----------------------------------------------------
+18:41:56.899 [main] DEBUG resources.BaseActi - ----------------------------------------------------
+18:41:56.908 [main] DEBUG resources.BaseActi - Browser initialized
+18:42:03.959 [main] DEBUG resources.BaseActi - Web Applicaton  launched
+18:42:10.882 [main] DEBUG resources.BaseActi - Clicked on create customer button
+18:42:11.645 [main] DEBUG resources.BaseActi - Shiva2024-06-10 18:42:10 is present in the customer list
+18:42:13.564 [main] DEBUG resources.BaseActi - Clicked on create customer button
+18:42:14.036 [main] DEBUG resources.BaseActi - Clicked on view customer edit icon
+18:42:16.682 [main] DEBUG resources.BaseActi - Clicked on old customer name lable to edit
+18:42:16.914 [main] DEBUG resources.BaseActi - Edited customer name
+18:42:17.692 [main] DEBUG resources.BaseActi - lenova;2024-06-10 18:42:12 is present in the customer list after edit
+18:42:19.721 [main] DEBUG resources.BaseActi - Clicked on create customer button
+18:42:20.165 [main] DEBUG resources.BaseActi - Clicked on view customer edit icon
+18:42:22.794 [main] DEBUG resources.BaseActi - Clicked on old customer name lable to edit
+18:42:22.999 [main] DEBUG resources.BaseActi - Edited customer name
+18:42:23.908 [main] DEBUG resources.BaseActi -  customer name : lenova;2024-06-10 18:42:18 is deleted
+18:42:44.459 [main] DEBUG resources.BaseActi - Web Application closed
+18:42:44.459 [main] DEBUG resources.BaseActi - ----------------------------------------------------
+18:43:17.360 [main] DEBUG resources.BaseActi - ----------------------------------------------------
+18:43:17.372 [main] DEBUG resources.BaseActi - Browser initialized
+18:43:24.069 [main] DEBUG resources.BaseActi - Web Applicaton  launched
+18:43:31.026 [main] DEBUG resources.BaseActi - Clicked on create customer button
+18:43:31.779 [main] DEBUG resources.BaseActi - Shiva2024-06-10 18:43:30 is present in the customer list
+18:43:33.668 [main] DEBUG resources.BaseActi - Clicked on create customer button
+18:43:34.117 [main] DEBUG resources.BaseActi - Clicked on view customer edit icon
+18:43:36.764 [main] DEBUG resources.BaseActi - Clicked on old customer name lable to edit
+18:43:37.003 [main] DEBUG resources.BaseActi - Edited customer name
+18:43:37.793 [main] DEBUG resources.BaseActi - lenova;2024-06-10 18:43:32 is present in the customer list after edit
+18:43:39.729 [main] DEBUG resources.BaseActi - Clicked on create customer button
+18:43:40.184 [main] DEBUG resources.BaseActi - Clicked on view customer edit icon
+18:43:42.807 [main] DEBUG resources.BaseActi - Clicked on old customer name lable to edit
+18:43:43.027 [main] DEBUG resources.BaseActi - Edited customer name
+18:43:43.941 [main] DEBUG resources.BaseActi -  customer name : lenova;2024-06-10 18:43:39 is deleted
+18:43:44.674 [main] DEBUG resources.BaseActi - lenova;2024-06-10 18:43:39 is deleted
+18:43:44.844 [main] DEBUG resources.BaseActi - Web Application closed
+18:43:44.844 [main] DEBUG resources.BaseActi - ----------------------------------------------------
+18:43:50.228 [main] DEBUG resources.BaseActi - ----------------------------------------------------
+18:43:50.233 [main] DEBUG resources.BaseActi - Browser initialized
+18:43:56.523 [main] DEBUG resources.BaseActi - Web Applicaton  launched
+18:44:03.586 [main] DEBUG resources.BaseActi - Clicked on create customer button
+18:44:04.363 [main] DEBUG resources.BaseActi - Shiva2024-06-10 18:44:02 is present in the customer list
+18:44:06.162 [main] DEBUG resources.BaseActi - Clicked on create customer button
+18:44:06.588 [main] DEBUG resources.BaseActi - Clicked on view customer edit icon
+18:44:09.211 [main] DEBUG resources.BaseActi - Clicked on old customer name lable to edit
+18:44:09.485 [main] DEBUG resources.BaseActi - Edited customer name
+18:44:10.331 [main] DEBUG resources.BaseActi - lenova;2024-06-10 18:44:05 is present in the customer list after edit
+18:44:13.812 [main] DEBUG resources.BaseActi - Clicked on create customer button
+18:44:14.271 [main] DEBUG resources.BaseActi - Clicked on view customer edit icon
+18:44:16.915 [main] DEBUG resources.BaseActi - Clicked on old customer name lable to edit
+18:44:17.166 [main] DEBUG resources.BaseActi - Edited customer name
+18:44:18.068 [main] DEBUG resources.BaseActi -  customer name : lenova;2024-06-10 18:44:13 is deleted
+18:44:18.792 [main] DEBUG resources.BaseActi - lenova;2024-06-10 18:44:13 is deleted
+18:44:18.998 [main] DEBUG resources.BaseActi - Web Application closed
+18:44:18.999 [main] DEBUG resources.BaseActi - ----------------------------------------------------
+18:44:24.022 [main] DEBUG resources.BaseActi - ----------------------------------------------------
+18:44:24.025 [main] DEBUG resources.BaseActi - Browser initialized
+18:44:47.554 [main] DEBUG resources.BaseActi - Web Applicaton  launched
+18:45:12.111 [main] DEBUG resources.BaseActi - Clicked on create customer button
+18:45:12.905 [main] DEBUG resources.BaseActi - Shiva2024-06-10 18:45:11 is present in the customer list
+18:45:14.966 [main] DEBUG resources.BaseActi - Clicked on create customer button
+18:45:15.560 [main] DEBUG resources.BaseActi - Clicked on view customer edit icon
+18:45:18.189 [main] DEBUG resources.BaseActi - Clicked on old customer name lable to edit
+18:45:18.431 [main] DEBUG resources.BaseActi - Edited customer name
+18:45:19.232 [main] DEBUG resources.BaseActi - lenova;2024-06-10 18:45:14 is present in the customer list after edit
+18:45:21.508 [main] DEBUG resources.BaseActi - Clicked on create customer button
+18:45:22.644 [main] DEBUG resources.BaseActi - Clicked on view customer edit icon
+18:45:25.283 [main] DEBUG resources.BaseActi - Clicked on old customer name lable to edit
+18:45:25.493 [main] DEBUG resources.BaseActi - Edited customer name
+18:45:26.580 [main] DEBUG resources.BaseActi -  customer name : lenova;2024-06-10 18:45:20 is deleted
+18:45:27.297 [main] DEBUG resources.BaseActi - lenova;2024-06-10 18:45:20 is deleted
+18:45:27.475 [main] DEBUG resources.BaseActi - Web Application closed
+18:45:27.475 [main] DEBUG resources.BaseActi - ----------------------------------------------------
+18:45:32.585 [main] DEBUG resources.BaseActi - ----------------------------------------------------
+18:45:32.588 [main] DEBUG resources.BaseActi - Browser initialized
+18:45:43.875 [main] DEBUG resources.BaseActi - Web Applicaton  launched
+18:45:52.924 [main] DEBUG resources.BaseActi - Clicked on create customer button
+18:45:53.715 [main] DEBUG resources.BaseActi - Shiva2024-06-10 18:45:52 is present in the customer list
+18:45:55.401 [main] DEBUG resources.BaseActi - Clicked on create customer button
+18:45:55.871 [main] DEBUG resources.BaseActi - Clicked on view customer edit icon
+18:45:57.617 [main] DEBUG resources.BaseActi - ----------------------------------------------------
+18:45:57.622 [main] DEBUG resources.BaseActi - Browser initialized
+18:45:58.514 [main] DEBUG resources.BaseActi - Clicked on old customer name lable to edit
+18:45:58.721 [main] DEBUG resources.BaseActi - Edited customer name
+18:45:59.487 [main] DEBUG resources.BaseActi - lenova;2024-06-10 18:45:54 is present in the customer list after edit
+18:46:02.785 [main] DEBUG resources.BaseActi - Clicked on create customer button
+18:46:03.396 [main] DEBUG resources.BaseActi - Clicked on view customer edit icon
+18:46:05.578 [main] DEBUG resources.BaseActi - Clicked on old customer name lable to edit
+18:46:05.996 [main] DEBUG resources.BaseActi - Edited customer name
+18:46:07.066 [main] DEBUG resources.BaseActi -  customer name : lenova;2024-06-10 18:46:01 is deleted
+18:46:08.185 [main] DEBUG resources.BaseActi - lenova;2024-06-10 18:46:01 is deleted
+18:46:08.378 [main] DEBUG resources.BaseActi - Web Application closed
+18:46:08.378 [main] DEBUG resources.BaseActi - ----------------------------------------------------
+18:46:08.722 [main] DEBUG resources.BaseActi - Web Applicaton  launched
+18:46:15.161 [main] DEBUG test.CommonTest - User succesfully logged in
+18:46:19.513 [main] DEBUG test.CommonTest - Clicked on create customer button
+18:46:22.660 [main] DEBUG test.CommonTest - Clicked on create customer button
+18:46:23.402 [main] DEBUG test.CommonTest - Clicked on add new button again
+18:46:23.495 [main] DEBUG test.CommonTest - clicked on new project
+18:46:24.635 [main] DEBUG test.CommonTest - Entered project name
+18:46:24.851 [main] DEBUG test.CommonTest - Clicked on create customer button
+18:46:25.008 [main] DEBUG test.CommonTest - Searched customer name
+18:46:27.287 [main] DEBUG test.CommonTest - Clicked on create customer button
+18:46:27.767 [main] DEBUG test.CommonTest - Clicked on add new button again
+18:46:27.915 [main] DEBUG test.CommonTest - clicked on new project
+18:46:29.119 [main] DEBUG test.CommonTest - Entered project name
+18:46:29.332 [main] DEBUG test.CommonTest - Clicked on create customer button
+18:46:30.443 [main] DEBUG test.CommonTest - Clicked on add new button to create new task
+18:46:30.479 [main] DEBUG test.CommonTest - Clicked on create new task
+18:46:31.024 [main] DEBUG test.CommonTest - Entered Task name
+18:46:43.458 [main] DEBUG test.CommonTest - Clicked on create customer button
+18:46:43.898 [main] DEBUG test.CommonTest - Clicked on add new button again
+18:46:43.996 [main] DEBUG test.CommonTest - clicked on new project
+18:46:45.262 [main] DEBUG test.CommonTest - Entered project name
+18:46:45.496 [main] DEBUG test.CommonTest - Clicked on create customer button
+18:46:46.680 [main] DEBUG test.CommonTest - Clicked on add new button to create new task
+18:46:46.728 [main] DEBUG test.CommonTest - Clicked on create new task
+18:46:47.295 [main] DEBUG test.CommonTest - Entered Task name
+18:46:48.261 [main] DEBUG test.CommonTest - Clicked on add new button 
+18:46:48.660 [main] DEBUG test.CommonTest - Entered new task 
+18:46:49.217 [main] DEBUG test.CommonTest - Clicked on add new button after entering new task

@@ -92,26 +92,55 @@ public class tasksListCheckTestObjects {
 		return tasksXpathCommonFirstHalf;
 
 	}
-	
+
 	// css path scrollable div = .content.kanbanVerticalScrollContainer
-	
+
 	private String scrollableDiv = "//div[@class = 'kanbanViewContainer']";
+
 	public String scrollableDiv() {
 		return scrollableDiv;
 	}
-	
+
 	private String tasksHeader = "//div[contains(@class,'statusHeader' )]//div[contains(@class,'statusHeader' )]//div[@class='name']";
+
 	public String tasksHeader() {
 		return tasksHeader;
 	}
-	
+
 	private String minimizeCustomer = "//div[@class='kanbanContent']//div[@class='header']//div[@class='icon']";
+
 	public String minimizeCustomer() {
 		return minimizeCustomer;
 	}
-	
+
 	private String tasksInCustomersRow = "//div[@class='projectTasksBlock']//following::div[@class='name gradientEllipsis']";
+
 	public String tasksInCustomersRow() {
 		return tasksInCustomersRow;
 	}
+
+	private String taskCheckbox = "//div[@class='taskColumns']//input[@class='checkbox ']/following-sibling::span";
+
+	public String taskCheckbox() {
+		return taskCheckbox;
+	}
+
+	private String taskDeleteBtn = "//div[@class='delete button']";
+
+	public String taskDeleteBtn() {
+		return taskDeleteBtn;
+	}
+
+	private String taskDeletePermanently = "//span[text()='Delete permanently']";
+
+	public String taskDeletePermanently() {
+		return taskDeletePermanently;
+	}
+
+	private String noTaskMessage = "(//p[text()='There are no tasks'])[2]";
+
+	public String noTaskMessage() {
+		return noTaskMessage;
+	}
+
 }

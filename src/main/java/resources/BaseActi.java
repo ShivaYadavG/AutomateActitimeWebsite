@@ -9,9 +9,11 @@ import java.util.Date;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
+
 import org.apache.commons.io.FileUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -19,13 +21,19 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterSuite;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeSuite;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+import pageObjects.LogInPage;
 //import test.CommonTest;
 import pageObjects.TasksTabPage;
+
+
 
 public class BaseActi {
 	public static WebDriver driver;
@@ -77,13 +85,30 @@ public class BaseActi {
 	
 	
 	@BeforeSuite
-	public void launching() throws IOException {
+	public void launching() throws IOException, InterruptedException {
 		log = LogManager.getLogger(BaseActi.class.getName());
 		driver = initializeActiBrowser();
 		log.debug("----------------------------------------------------");
 		log.debug("Browser initialized");
 		driver.get(prop.getProperty("URL"));
 		log.debug("Web Applicaton  launched");
+		
+		String emailValue = prop.getProperty("email");
+		String passwordValue = prop.getProperty("passwd");
+		ElementSelector ElementSelector = new ElementSelector(driver);
+		SendKeysToElement SendKeysToElement = new SendKeysToElement(driver);
+		LogInPage LogInPage = new LogInPage(driver);
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+		
+		// Log in
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(LogInPage.userName())));
+		SendKeysToElement.sendKeysToElementByXpath(LogInPage.userName(), prop.getProperty("userName"));
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(LogInPage.password())));
+		SendKeysToElement.sendKeysToElementByXpath(LogInPage.password(), prop.getProperty("password"));
+		wait.until(ExpectedConditions.elementToBeClickable(By.id(LogInPage.logInButton())));
+		ElementSelector.clickById(LogInPage.logInButton());
+		wait.until(ExpectedConditions.urlToBe("https://online.actitime.com/shvia/timetrack/enter.do"));
+		
 	}
 
 	@AfterSuite

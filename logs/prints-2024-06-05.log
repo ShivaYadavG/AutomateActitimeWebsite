@@ -1,0 +1,124 @@
+11:07:42.959 [main] DEBUG test.CommonTest - Clicked on create customer button
+11:07:43.625 [main] DEBUG test.CommonTest - Clicked on view customer edit icon
+11:07:44.840 [main] DEBUG test.CommonTest - Clicked on old customer name lable to edit
+11:07:45.428 [main] DEBUG test.CommonTest - Edited customer name
+11:07:46.470 [main] DEBUG test.CommonTest -  customer name : lenova;2024-06-05 11:07:40 is deleted
+11:07:47.572 [main] DEBUG test.CommonTest - lenova;2024-06-05 11:07:40 is deleted
+11:07:47.766 [main] DEBUG test.CommonTest - Web Application closed
+11:07:47.766 [main] DEBUG test.CommonTest - ----------------------------------------------------
+11:09:37.675 [main] DEBUG resources.BaseActi - ----------------------------------------------------
+11:09:37.680 [main] DEBUG resources.BaseActi - Browser initialized
+11:09:46.083 [main] DEBUG resources.BaseActi - Web Applicaton  launched
+11:09:57.901 [main] DEBUG test.CommonTest - Clicked on create customer button
+11:09:58.912 [main] DEBUG test.CommonTest - Shiva2024-06-05 11:09:56 is present in the customer list
+11:10:01.763 [main] DEBUG test.CommonTest - Clicked on create customer button
+11:10:02.323 [main] DEBUG test.CommonTest - Clicked on view customer edit icon
+11:10:03.215 [main] DEBUG test.CommonTest - Clicked on old customer name lable to edit
+11:10:03.460 [main] DEBUG test.CommonTest - Edited customer name
+11:10:04.370 [main] DEBUG test.CommonTest - lenova;2024-06-05 11:10:00 is present in the customer list after edit
+11:10:07.011 [main] DEBUG test.CommonTest - Clicked on create customer button
+11:10:07.433 [main] DEBUG test.CommonTest - Clicked on view customer edit icon
+11:10:08.309 [main] DEBUG test.CommonTest - Clicked on old customer name lable to edit
+11:10:08.723 [main] DEBUG test.CommonTest - Edited customer name
+11:10:09.739 [main] DEBUG test.CommonTest -  customer name : lenova;2024-06-05 11:10:05 is deleted
+11:10:30.558 [main] DEBUG test.CommonTest - Web Application closed
+11:10:30.559 [main] DEBUG test.CommonTest - ----------------------------------------------------
+11:11:16.837 [main] DEBUG resources.BaseActi - ----------------------------------------------------
+11:11:16.842 [main] DEBUG resources.BaseActi - Browser initialized
+11:11:26.006 [main] DEBUG resources.BaseActi - Web Applicaton  launched
+11:11:37.830 [main] DEBUG test.CommonTest - Clicked on create customer button
+11:11:41.068 [main] DEBUG test.CommonTest - Clicked on create customer button
+11:11:41.492 [main] DEBUG test.CommonTest - Clicked on view customer edit icon
+11:11:42.328 [main] DEBUG test.CommonTest - Clicked on old customer name lable to edit
+11:11:42.667 [main] DEBUG test.CommonTest - Edited customer name
+11:11:43.621 [main] DEBUG test.CommonTest - lenova;2024-06-05 11:11:40 is present in the customer list after edit
+11:11:45.920 [main] DEBUG test.CommonTest - Clicked on create customer button
+11:11:46.465 [main] DEBUG test.CommonTest - Clicked on view customer edit icon
+11:11:47.267 [main] DEBUG test.CommonTest - Clicked on old customer name lable to edit
+11:11:47.440 [main] DEBUG test.CommonTest - Edited customer name
+11:11:48.414 [main] DEBUG test.CommonTest -  customer name : lenova;2024-06-05 11:11:45 is deleted
+11:11:49.120 [main] DEBUG test.CommonTest - lenova;2024-06-05 11:11:45 is deleted
+11:11:49.312 [main] DEBUG test.CommonTest - Web Application closed
+11:11:49.313 [main] DEBUG test.CommonTest - ----------------------------------------------------
+11:13:40.755 [main] DEBUG resources.BaseActi - ----------------------------------------------------
+11:13:40.760 [main] DEBUG resources.BaseActi - Browser initialized
+11:13:41.791 [main] DEBUG resources.BaseActi - Web Applicaton  launched
+11:14:03.507 [main] DEBUG test.CommonTest - Clicked on create customer button
+11:14:04.284 [main] DEBUG test.CommonTest - Shiva2024-06-05 11:14:02 is present in the customer list
+11:14:06.758 [main] DEBUG test.CommonTest - Clicked on create customer button
+11:14:07.260 [main] DEBUG test.CommonTest - Clicked on view customer edit icon
+11:14:08.078 [main] DEBUG test.CommonTest - Clicked on old customer name lable to edit
+11:14:08.358 [main] DEBUG test.CommonTest - Edited customer name
+11:14:09.213 [main] DEBUG test.CommonTest - lenova;2024-06-05 11:14:05 is present in the customer list after edit
+11:14:12.642 [main] DEBUG test.CommonTest - Clicked on create customer button
+11:14:13.116 [main] DEBUG test.CommonTest - Clicked on view customer edit icon
+11:14:14.564 [main] DEBUG test.CommonTest - Web Application closed
+11:14:14.564 [main] DEBUG test.CommonTest - ----------------------------------------------------
+11:54:14.023 [main] DEBUG resources.BaseActi - ----------------------------------------------------
+11:54:14.026 [main] DEBUG resources.BaseActi - Browser initialized
+11:54:25.863 [main] DEBUG resources.BaseActi - Web Applicaton  launched
+11:54:26.134 [main] DEBUG resources.BaseActi - Web Application closed
+11:54:26.134 [main] DEBUG resources.BaseActi - ----------------------------------------------------
+11:54:40.068 [main] DEBUG resources.BaseActi - ----------------------------------------------------
+11:54:40.074 [main] DEBUG resources.BaseActi - Browser initialized
+11:54:41.329 [main] DEBUG resources.BaseActi - Web Applicaton  launched
+11:55:02.497 [main] DEBUG test.CommonTest - User succesfully logged in
+11:55:02.724 [main] DEBUG test.CommonTest - Web Application closed
+11:55:02.724 [main] DEBUG test.CommonTest - ----------------------------------------------------
+11:55:13.243 [main] DEBUG resources.BaseActi - ----------------------------------------------------
+11:55:13.257 [main] DEBUG resources.BaseActi - Browser initialized
+11:55:29.674 [main] DEBUG resources.BaseActi - Web Applicaton  launched
+11:55:40.129 [main] DEBUG test.CommonTest - Web Application closed
+11:55:40.129 [main] DEBUG test.CommonTest - ----------------------------------------------------
+11:55:46.312 [main] DEBUG resources.BaseActi - ----------------------------------------------------
+11:55:46.317 [main] DEBUG resources.BaseActi - Browser initialized
+11:55:56.852 [main] DEBUG resources.BaseActi - Web Applicaton  launched
+11:56:06.989 [main] DEBUG test.CommonTest - User succesfully logged in
+11:56:07.200 [main] DEBUG test.CommonTest - Web Application closed
+11:56:07.200 [main] DEBUG test.CommonTest - ----------------------------------------------------
+11:56:17.437 [main] DEBUG resources.BaseActi - ----------------------------------------------------
+11:56:17.440 [main] DEBUG resources.BaseActi - Browser initialized
+11:56:30.172 [main] DEBUG resources.BaseActi - Web Applicaton  launched
+11:56:37.048 [main] DEBUG test.CommonTest - User succesfully logged in
+11:56:42.496 [main] DEBUG test.CommonTest - Clicked on create customer button
+11:56:43.566 [main] DEBUG test.CommonTest - Newly created customer name is verified
+11:56:45.994 [main] DEBUG test.CommonTest - Clicked on create customer button
+11:56:47.082 [main] DEBUG test.CommonTest - Clicked on add new button again
+11:56:47.219 [main] DEBUG test.CommonTest - clicked on new project
+11:56:50.454 [main] DEBUG test.CommonTest - Entered project name
+11:56:50.730 [main] DEBUG test.CommonTest - Clicked on create customer button
+11:56:50.929 [main] DEBUG test.CommonTest - Searched customer name
+11:56:53.492 [main] DEBUG test.CommonTest - Clicked on create customer button
+11:56:54.024 [main] DEBUG test.CommonTest - Clicked on add new button again
+11:56:54.152 [main] DEBUG test.CommonTest - clicked on new project
+11:56:57.465 [main] DEBUG test.CommonTest - Entered project name
+11:56:57.732 [main] DEBUG test.CommonTest - Clicked on create customer button
+11:56:59.072 [main] DEBUG test.CommonTest - Clicked on add new button to create new task
+11:56:59.149 [main] DEBUG test.CommonTest - Clicked on create new task
+11:56:59.768 [main] DEBUG test.CommonTest - Entered Task name
+11:57:12.729 [main] DEBUG test.CommonTest - Clicked on create customer button
+11:57:13.210 [main] DEBUG test.CommonTest - Clicked on add new button again
+11:57:13.453 [main] DEBUG test.CommonTest - clicked on new project
+11:57:16.747 [main] DEBUG test.CommonTest - Entered project name
+11:57:16.987 [main] DEBUG test.CommonTest - Clicked on create customer button
+11:57:18.334 [main] DEBUG test.CommonTest - Clicked on add new button to create new task
+11:57:18.385 [main] DEBUG test.CommonTest - Clicked on create new task
+11:57:18.985 [main] DEBUG test.CommonTest - Entered Task name
+11:57:20.279 [main] DEBUG test.CommonTest - Clicked on add new button 
+11:57:20.657 [main] DEBUG test.CommonTest - Entered new task 
+11:57:21.190 [main] DEBUG test.CommonTest - Clicked on add new button after entering new task
+11:57:42.940 [main] DEBUG test.CommonTest - Web Application closed
+11:57:42.940 [main] DEBUG test.CommonTest - ----------------------------------------------------
+11:58:35.414 [main] DEBUG resources.BaseActi - ----------------------------------------------------
+11:58:35.425 [main] DEBUG resources.BaseActi - Browser initialized
+11:58:46.291 [main] DEBUG resources.BaseActi - Web Applicaton  launched
+11:58:57.938 [main] DEBUG test.CommonTest - Clicked on create customer button
+11:58:58.877 [main] DEBUG test.CommonTest - Shiva2024-06-05 11:58:56 is present in the customer list
+11:59:01.376 [main] DEBUG test.CommonTest - Clicked on create customer button
+11:59:01.931 [main] DEBUG test.CommonTest - Clicked on view customer edit icon
+11:59:02.717 [main] DEBUG test.CommonTest - Clicked on old customer name lable to edit
+11:59:02.929 [main] DEBUG test.CommonTest - Edited customer name
+11:59:03.815 [main] DEBUG test.CommonTest - lenova;2024-06-05 11:59:00 is present in the customer list after edit
+11:59:06.158 [main] DEBUG test.CommonTest - Clicked on create customer button
+11:59:06.707 [main] DEBUG test.CommonTest - Clicked on view customer edit icon
+11:59:07.526 [main] DEBUG test.CommonTest - Clicked on old customer name lable to edit
