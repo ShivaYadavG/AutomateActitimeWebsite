@@ -20,15 +20,6 @@ public class TasksTabPage {
 		return timeTrackTab;
 	}
 	
-	/* Using id for tasks tab
-	private String tasksTab = "container_tasks";
-
-	public String tasksTab() {
-		return tasksTab;
-	}
-	*/
-	
-	//using xpath for tasks tab
 	private String tasksTab = "//div[@id='container_tasks']/following-sibling::div[text()='Tasks']";
 
 	public String tasksTab() {
@@ -42,8 +33,7 @@ public class TasksTabPage {
 		return addNewBtn;
 	}
 
-	private String newCustomerBtn = "//div[@class='dropdownContainer addNewMenu']/descendant::div[@class='item createNewCustomer']";
-
+	private String newCustomerBtn = "//div[@class='item createNewCustomer']";  // Selector hub
 	public String newCustomerBtn() {
 		return newCustomerBtn;
 	}
@@ -60,19 +50,18 @@ public class TasksTabPage {
 		return createCustomer;
 	}
 
-	private String newProject = "//div[@class=\"dropdownContainer addNewMenu\"]//descendant::div[@class=\"item createNewProject\"]";
-
+	private String newProject = "//div[@class='item createNewProject']";
 	public String newProject() {
 		return newProject;
 	}
 
-	private String enterProjectName = "//div[@class=\"projectSection\"]/descendant::input[contains(@class,'projectNameField')]";
+	private String enterProjectName = "//div[@class='projectSection']/descendant::input[contains(@class,'projectNameField')]";
 
 	public String enterProjectName() {
 		return enterProjectName;
 	}
 
-	private String taskName = "//div[@class=\"projectSection\"]/descendant::td[contains(@class,'nameCell first')][1]";
+	private String taskName = "//div[@class='projectSection']/descendant::td[contains(@class,'nameCell first')][1]";
 
 	public String taskName() {
 		return taskName;
@@ -115,7 +104,6 @@ public class TasksTabPage {
 	}
 
 	private String customerNameLabeToEdit = "//div[@class='editCustomerPanelHeader']/div[@class='customerNamePlaceHolder']//div[@class='nameLabel']";
-//	private String customerNameLabeToEdit = "//div[@class='editCustomerPanelHeader']/div[@class='customerNamePlaceHolder']";
 	public String customerNameLabeToEdit() {
 		return customerNameLabeToEdit;
 	}
@@ -149,16 +137,19 @@ public class TasksTabPage {
 	public String collapseButton() {
 		return collapseButton;
 	}
+	
+	private String collapseAllProjectsBtn = "//div[@class='collapseAllButton']//div[@class='collapseAllButtonLabel']";
+	public String collapseAllProjectsBtn() {
+		return collapseAllProjectsBtn;
+	}	
 
-	private String viewCustomerProjects = "//div[text()='view customer projects'][1]";
-
-	public String viewCustomerProjects() {
+	public String viewCustomerProjects(String createdCustomeName) {
+		String viewCustomerProjects = "//div[@class='filteredContainer']//div[@class='itemsContainer']//*[text()='"+createdCustomeName+"']/../../../following-sibling::div//div[text()='view customer projects']";
 		return viewCustomerProjects;
 	}
-
-	private String customerProjectName = "(//div[@class=\"filteredContainer\"]//div[contains(@class,'projectNode')]//div[@class='title'])[2]";
-
-	public String customerProjectName() {
+	
+	public String customerProjectName(String createdCustomeName) {
+		String customerProjectName ="//div[@class='filteredContainer']//div[@class='itemsContainer']//*[text()='"+createdCustomeName+"']/../../../following-sibling::div[contains(@class,'projectNode notSelected')]//div[@class='text']";
 		return customerProjectName;
 	}
 
@@ -180,7 +171,7 @@ public class TasksTabPage {
 		return editIcon;
 	}
 
-	String actiondDropDown = "(//div[@class='actionButtonWrapper']/div[@class='actionButton'])[1]";
+	String actiondDropDown = "(//div[@class='actionButtonWrapper']/div[@class='actionButton'])[1]//div[text()='ACTIONS']";
 
 	public String actionDropDown() {
 		return actiondDropDown;
@@ -204,19 +195,23 @@ public class TasksTabPage {
 		return firstNewlyAddedTask;
 	}
 
-	String firstCustomerNameNotSelected = "//div[@class='filteredContainer']//div[@class='itemsContainer']//div[@class='title']";
+	public String firstCustomerNameNotSelected(String createdCustomeName) {
+		String createdCustomerXpath = "//div[@class='filteredContainer']//div[@class='itemsContainer']//*[text()='" + createdCustomeName + "']";
+		return createdCustomerXpath;
+	}
+	
+	String ListOfCustomersAfterSearchXpath = "//div[@class='filteredContainer']//div[@class='itemsContainer']//div[contains(@class,'customerNode')]//div[@class='title']//div[@class='text']";
+	public String ListOfCustomersAfterSearchXpath() {
+		return ListOfCustomersAfterSearchXpath;
+	}
+	
+	String firstCustomerNameNotSelectedXpath = "(//div[@class='filteredContainer']//div[@class='itemsContainer']//div[contains(@class,'customerNode')]//div[@class='title']//div[@class='text'])[1]";
 
-	public String firstCustomerNameNotSelected() {
-		return firstCustomerNameNotSelected;
+	public String firstCustomerNameNotSelectedXpath() {
+		return firstCustomerNameNotSelectedXpath;
 	}
 
-	String firstCustomerName = "//div[@class='filteredContainer']//div[@class='itemsContainer']//div[contains(@class,'customerNode')]//div[@class='title']//div[@class='text']";
-
-	public String firstCustomerName() {
-		return firstCustomerName;
-	}
-
-	String firstProjectName = "//div[@class='filteredContainer']//div[@class='itemsContainer']//div[contains(@class,'node projectNode notSelected editable')]//div[@class='title']";
+	String firstProjectName = "//div[@class='filteredContainer']//div[@class='itemsContainer']//div[contains(@class,'node projectNode notSelected editable')]//div[@class='title']//div[@class='text']";
 
 	public String firstProjectName() {
 		return firstProjectName;
@@ -227,9 +222,6 @@ public class TasksTabPage {
 	public String firstProjectNameAfterAddingSubTask() {
 		return firstProjectNameAfterAddingSubTask;
 	}
-	// minimize and maximize
-	// //*[text()='OPEN TASKS']/following::*[@class='projectName' and text()='Flight
-	// operations']/..//div[@class='icon']
 
 	String addNewTaskBtn = "//*[@class='rightContainer']//*[text()='Add Task']";
 
@@ -237,16 +229,16 @@ public class TasksTabPage {
 		return addNewTaskBtn;
 	}
 
-	String addingNewTaskTextBox = "/html/body/div[45]/div[1]/div/div[1]/div/div[1]/div/div[2]/div/div[2]/input";
+	String addingNewTaskTextBox = "//div[contains(@class,'nameInfo editable')]//div[@class='nameInput']//input[@placeholder='Enter Task Name']";
 
 	public String addingNewTaskTextBox() {
 		return addingNewTaskTextBox;
 	}
 
-	String addNewBtnAfterEneteringTask = "(//div[@class='buttonsBox']//*[@class='components_button_label'][text()='Add Task'])[2]";
+	String addTaskBtnAfterEneteringTask = "(//div[@class='buttonsBox']//*[@class='components_button_label'][text()='Add Task'])[2]";
 
-	public String addNewBtnAfterEneteringTask() {
-		return addNewBtnAfterEneteringTask;
+	public String addTaskBtnAfterEneteringTask() {
+		return addTaskBtnAfterEneteringTask;
 	}
 
 }

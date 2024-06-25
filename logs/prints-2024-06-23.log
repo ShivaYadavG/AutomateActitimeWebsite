@@ -1,0 +1,127 @@
+22:56:44.688 [main] DEBUG resources.BaseActi - clicked on new project
+22:56:45.998 [main] DEBUG resources.BaseActi - Entered project name
+22:56:46.357 [main] DEBUG resources.BaseActi - Clicked on create customer button
+22:56:46.880 [main] DEBUG resources.BaseActi - Searched customer name
+22:56:51.300 [main] DEBUG resources.BaseActi - Clicked on create customer button
+22:56:51.876 [main] DEBUG resources.BaseActi - Clicked on add new button again
+22:56:52.027 [main] DEBUG resources.BaseActi - clicked on new project
+22:56:53.343 [main] DEBUG resources.BaseActi - Entered project name
+22:56:53.610 [main] DEBUG resources.BaseActi - Clicked on create customer button
+22:56:54.936 [main] DEBUG resources.BaseActi - Clicked on add new button to create new task
+22:56:55.099 [main] DEBUG resources.BaseActi - Clicked on create new task
+22:56:56.375 [main] DEBUG resources.BaseActi - Entered Task name
+22:57:03.199 [main] DEBUG resources.BaseActi - Clicked on create customer button
+22:57:03.731 [main] DEBUG resources.BaseActi - Clicked on add new button again
+22:57:03.857 [main] DEBUG resources.BaseActi - clicked on new project
+22:57:05.162 [main] DEBUG resources.BaseActi - Entered project name
+22:57:05.449 [main] DEBUG resources.BaseActi - Clicked on create customer button
+22:57:06.976 [main] DEBUG resources.BaseActi - Clicked on add new button to create new task
+22:57:07.057 [main] DEBUG resources.BaseActi - Clicked on create new task
+22:57:08.061 [main] DEBUG resources.BaseActi - Entered Task name
+22:57:09.440 [main] DEBUG resources.BaseActi - Clicked on add new button 
+22:57:09.866 [main] DEBUG resources.BaseActi - Entered new task 
+22:57:10.445 [main] DEBUG resources.BaseActi - Clicked on add new button after entering new task
+22:57:13.303 [main] DEBUG resources.BaseActi - 'Automate amazon website0623225702' is the new task added
+22:57:17.462 [main] DEBUG resources.BaseActi - Clicked on create customer button
+22:57:20.436 [main] DEBUG resources.BaseActi - Clicked on view customer edit icon
+22:57:20.470 [main] DEBUG resources.BaseActi - Clicked on old customer name label to edit
+22:57:20.739 [main] DEBUG resources.BaseActi - Edited customer name
+22:57:26.934 [main] DEBUG resources.BaseActi - Clicked on create customer button
+22:57:36.920 [main] DEBUG resources.BaseActi - Clicked on create customer button
+22:57:37.450 [main] DEBUG resources.BaseActi - Clicked on add new button again
+22:57:37.601 [main] DEBUG resources.BaseActi - clicked on new project
+22:57:38.962 [main] DEBUG resources.BaseActi - Entered project name
+22:57:39.194 [main] DEBUG resources.BaseActi - Clicked on create customer button
+22:57:39.800 [main] DEBUG resources.BaseActi - Clicked on add new button to create new task
+22:57:39.990 [main] DEBUG resources.BaseActi - Clicked on create new task
+22:57:41.010 [main] DEBUG resources.BaseActi - Entered Task name
+22:58:15.516 [main] DEBUG resources.BaseActi - Web Application closed
+22:58:15.518 [main] DEBUG resources.BaseActi - ----------------------------------------------------
+23:02:00.688 [main] DEBUG resources.BaseActi - ----------------------------------------------------
+23:02:00.696 [main] DEBUG resources.BaseActi - Browser initialized
+23:02:04.876 [main] DEBUG resources.BaseActi - Web Applicaton  launched
+23:02:12.430 [main] DEBUG resources.BaseActi - Clicked on create customer button
+23:02:12.930 [main] DEBUG resources.BaseActi - Clicked on add new button again
+23:02:13.069 [main] DEBUG resources.BaseActi - clicked on new project
+23:02:14.364 [main] DEBUG resources.BaseActi - Entered project name
+23:02:14.652 [main] DEBUG resources.BaseActi - Clicked on create customer button
+23:02:15.229 [main] DEBUG resources.BaseActi - Clicked on add new button to create new task
+23:02:15.332 [main] DEBUG resources.BaseActi - Clicked on create new task
+23:02:16.055 [main] DEBUG resources.BaseActi - Entered Task name
+23:02:21.636 [main] DEBUG resources.BaseActi - Web Application closed
+23:02:21.636 [main] DEBUG resources.BaseActi - ----------------------------------------------------
+23:02:48.075 [main] DEBUG resources.BaseActi - ----------------------------------------------------
+23:02:48.082 [main] DEBUG resources.BaseActi - Browser initialized
+23:02:53.197 [main] DEBUG resources.BaseActi - Web Applicaton  launched
+23:03:00.856 [main] DEBUG resources.BaseActi - Clicked on create customer button
+23:03:01.430 [main] DEBUG resources.BaseActi - Clicked on add new button again
+23:03:01.581 [main] DEBUG resources.BaseActi - clicked on new project
+23:03:02.899 [main] DEBUG resources.BaseActi - Entered project name
+23:03:03.229 [main] DEBUG resources.BaseActi - Clicked on create customer button
+23:03:03.754 [main] DEBUG resources.BaseActi - Clicked on add new button to create new task
+23:03:03.914 [main] DEBUG resources.BaseActi - Clicked on create new task
+23:03:04.672 [main] DEBUG resources.BaseActi - Entered Task name
+23:05:31.140 [main] DEBUG resources.BaseActi - ----------------------------------------------------
+23:05:31.146 [main] DEBUG resources.BaseActi - Browser initialized
+23:05:35.819 [main] DEBUG resources.BaseActi - Web Applicaton  launched
+23:05:43.666 [main] DEBUG resources.BaseActi - Clicked on create customer button
+23:05:44.176 [main] DEBUG resources.BaseActi - Clicked on add new button again
+23:05:44.281 [main] DEBUG resources.BaseActi - clicked on new project
+23:05:45.586 [main] DEBUG resources.BaseActi - Entered project name
+23:05:45.906 [main] DEBUG resources.BaseActi - Clicked on create customer button
+23:05:46.456 [main] DEBUG resources.BaseActi - Clicked on add new button to create new task
+23:05:46.583 [main] DEBUG resources.BaseActi - Clicked on create new task
+23:05:47.341 [main] DEBUG resources.BaseActi - Entered Task name
+23:11:53.085 [main] DEBUG resources.BaseActi - ----------------------------------------------------
+23:11:53.088 [main] DEBUG resources.BaseActi - Browser initialized
+23:11:59.308 [main] DEBUG resources.BaseActi - Web Applicaton  launched
+23:12:07.384 [main] DEBUG resources.BaseActi - Clicked on create customer button
+23:12:07.918 [main] DEBUG resources.BaseActi - Clicked on add new button again
+23:12:08.171 [main] DEBUG resources.BaseActi - clicked on new project
+23:12:09.474 [main] DEBUG resources.BaseActi - Entered project name
+23:12:09.818 [main] DEBUG resources.BaseActi - Clicked on create customer button
+23:12:10.441 [main] DEBUG resources.BaseActi - Clicked on add new button to create new task
+23:12:10.677 [main] DEBUG resources.BaseActi - Clicked on create new task
+23:12:11.558 [main] DEBUG resources.BaseActi - Entered Task name
+23:12:18.346 [main] DEBUG resources.BaseActi - Web Application closed
+23:12:18.353 [main] DEBUG resources.BaseActi - ----------------------------------------------------
+23:12:30.618 [main] DEBUG resources.BaseActi - ----------------------------------------------------
+23:12:30.622 [main] DEBUG resources.BaseActi - Browser initialized
+23:12:35.593 [main] DEBUG resources.BaseActi - Web Applicaton  launched
+23:12:53.185 [main] DEBUG resources.BaseActi - Clicked on create customer button
+23:12:57.890 [main] DEBUG resources.BaseActi - Clicked on create customer button
+23:12:59.231 [main] DEBUG resources.BaseActi - Clicked on add new button again
+23:12:59.372 [main] DEBUG resources.BaseActi - clicked on new project
+23:13:00.737 [main] DEBUG resources.BaseActi - Entered project name
+23:13:01.074 [main] DEBUG resources.BaseActi - Clicked on create customer button
+23:13:01.256 [main] DEBUG resources.BaseActi - Searched customer name
+23:13:05.671 [main] DEBUG resources.BaseActi - Clicked on create customer button
+23:13:06.356 [main] DEBUG resources.BaseActi - Clicked on add new button again
+23:13:06.566 [main] DEBUG resources.BaseActi - clicked on new project
+23:13:07.886 [main] DEBUG resources.BaseActi - Entered project name
+23:13:08.186 [main] DEBUG resources.BaseActi - Clicked on create customer button
+23:13:09.692 [main] DEBUG resources.BaseActi - Clicked on add new button to create new task
+23:13:09.802 [main] DEBUG resources.BaseActi - Clicked on create new task
+23:13:10.565 [main] DEBUG resources.BaseActi - Entered Task name
+23:13:17.698 [main] DEBUG resources.BaseActi - Clicked on create customer button
+23:13:18.274 [main] DEBUG resources.BaseActi - Clicked on add new button again
+23:13:18.469 [main] DEBUG resources.BaseActi - clicked on new project
+23:13:19.704 [main] DEBUG resources.BaseActi - Entered project name
+23:13:19.993 [main] DEBUG resources.BaseActi - Clicked on create customer button
+23:13:21.914 [main] DEBUG resources.BaseActi - Clicked on add new button to create new task
+23:13:22.109 [main] DEBUG resources.BaseActi - Clicked on create new task
+23:13:23.272 [main] DEBUG resources.BaseActi - Entered Task name
+23:13:24.623 [main] DEBUG resources.BaseActi - Clicked on add new button 
+23:13:25.414 [main] DEBUG resources.BaseActi - Entered new task 
+23:13:25.752 [main] DEBUG resources.BaseActi - Clicked on add new button after entering new task
+23:13:28.212 [main] DEBUG resources.BaseActi - 'Automate amazon website0623231316' is the new task added
+23:13:32.245 [main] DEBUG resources.BaseActi - Clicked on create customer button
+23:13:35.410 [main] DEBUG resources.BaseActi - Clicked on view customer edit icon
+23:13:35.444 [main] DEBUG resources.BaseActi - Clicked on old customer name label to edit
+23:13:35.695 [main] DEBUG resources.BaseActi - Edited customer name
+23:13:41.345 [main] DEBUG resources.BaseActi - Clicked on create customer button
+23:13:50.013 [main] DEBUG resources.BaseActi - Clicked on create customer button
+23:13:50.620 [main] DEBUG resources.BaseActi - Clicked on add new button again
+23:13:50.757 [main] DEBUG resources.BaseActi - clicked on new project
+23:13:52.238 [main] DEBUG resources.BaseActi - Entered project name
+23:13:52.543 [main] DEBUG resources.BaseActi - Clicked on create customer button

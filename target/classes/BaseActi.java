@@ -69,8 +69,6 @@ public class BaseActi {
 		Actions actions = new Actions(driver);
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-
 		return driver;
 
 	}

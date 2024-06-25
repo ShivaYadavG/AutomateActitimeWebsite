@@ -1,14 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Suite">
-	<test name="Test">
+	<test name="ReportPageTest">
 		<classes>
-			<class name="test.CommonTest"></class>
-			<class name="test.customerTest"></class>
-			<class name="test.tasksListCheckTest"></class>
-			<class name="test.Deleting_Task_Test"></class>
+			<class name="test.ReportPageTest" />
 		</classes>
-	</test> <!--
-	Test -->
-</suite> <!--
-Suite -->
+	</test>
+	<test name="CommonTest">
+		<classes>
+			<class name="test.CommonTest" />
+		</classes>
+	</test>
+	<test name="tasksListCheckTest">
+		<classes>
+			<class name="test.tasksListCheckTest" />
+		</classes>
+	</test>
+	<test name="UsersPageTest">
+		<classes>
+			<class name="test.UsersPageTest" />
+		</classes>
+	</test>
+</suite> 

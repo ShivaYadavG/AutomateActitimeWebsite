@@ -12,6 +12,7 @@ import org.apache.logging.log4j.LogManager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.ElementClickInterceptedException;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -37,10 +38,8 @@ public class CommonTestStepMethods extends BaseActi {
 	static reportPageObjects reportPageObjects = new reportPageObjects(driver);
 
 	public static String dateTime() {
-		// Getting the current date and time
 		Date currentDate = new Date();
-		// Formatting the date and time
-		SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+		SimpleDateFormat dateFormat = new SimpleDateFormat("MMddHHmmss");
 		String formattedDateTime = dateFormat.format(currentDate);
 		return formattedDateTime;
 	}
@@ -62,31 +61,28 @@ public class CommonTestStepMethods extends BaseActi {
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(LogInPage.password())));
 		driver.findElement(By.xpath(LogInPage.password())).clear();
 		SendKeysToElement.sendKeysToElementByXpath(LogInPage.password(), prop.getProperty("password"));
-		wait.until(ExpectedConditions.elementToBeClickable(By.id(LogInPage.logInButton())));
 		ElementSelector.clickById(LogInPage.logInButton());
 	}
 
 	// Opening task tab from nav bar
 	public static void openigTask() {
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
 		try {
-			wait.until(ExpectedConditions.elementToBeClickable(By.xpath(TasksTabPage.tasksTab())));
 			ElementSelector.clickByxpath(TasksTabPage.tasksTab());
 		} catch (Exception e) {
+			JavascriptExecutor js = (JavascriptExecutor) driver;
 			js.executeScript("arguments[0].click();", driver.findElement(By.xpath(TasksTabPage.tasksTab())));
 		}
 	}
 
-	//Creating customer 
+	// Creating customer
 	public static String creatingCustomer() throws InterruptedException {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
 		String formattedDateTime = dateTime();
 		// creating new customer
-		wait.until(ExpectedConditions.elementToBeClickable(By.xpath(TasksTabPage.addNewBtn())));
-		try{
+		try {
 			ElementSelector.clickByxpath(TasksTabPage.addNewBtn());
-		}
-		catch(Exception e) {
+		} catch (Exception e) {
+			JavascriptExecutor js = (JavascriptExecutor) driver;
 			js.executeScript("arguments[0].click();", driver.findElement(By.xpath(TasksTabPage.addNewBtn())));
 		}
 		ElementSelector.clickByxpath(TasksTabPage.newCustomerBtn());
@@ -103,13 +99,10 @@ public class CommonTestStepMethods extends BaseActi {
 	}
 
 	// Creating project
-	public static void creatingProject(String dateTime) throws InterruptedException {
-		String formattedDateTime = dateTime;
+	public static void creatingProject(String formattedDateTime) throws InterruptedException {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
-		wait.until(ExpectedConditions.elementToBeClickable(driver.findElement(By.xpath(TasksTabPage.addNewBtn()))));
 		ElementSelector.clickByxpath(TasksTabPage.addNewBtn());
 		log.debug("Clicked on add new button again");
-		wait.until(ExpectedConditions.elementToBeClickable(driver.findElement(By.xpath(TasksTabPage.newProject()))));
 		ElementSelector.clickByxpath(TasksTabPage.newProject());
 		log.debug("clicked on new project");
 		Thread.sleep(1000);
@@ -119,24 +112,27 @@ public class CommonTestStepMethods extends BaseActi {
 				prop.getProperty("projectName") + formattedDateTime);
 		log.debug("Entered project name");
 		Actions actions = new Actions(driver);
-		actions.moveToElement(driver.findElement(By.xpath(TasksTabPage.createProject()))).perform();
-		wait.until(ExpectedConditions.elementToBeClickable(driver.findElement(By.xpath(TasksTabPage.createProject()))));
-		ElementSelector.clickByxpath(TasksTabPage.createProject());
-		log.debug("Clicked on create customer button");
+		try {
+			actions.moveToElement(driver.findElement(By.xpath(TasksTabPage.createProject()))).perform();
+			ElementSelector.clickByxpath(TasksTabPage.createProject());
+			log.debug("Clicked on create customer button");
+		} catch (Exception e) {
+			JavascriptExecutor js = (JavascriptExecutor) driver;
+			js.executeScript("arguments[0].click();", driver.findElement(By.xpath(TasksTabPage.createProject())));
+		}
 	}
 
-	// Creting task 
-	public static void creatingTask(String dateTime) {
-		String formattedDateTime = dateTime;
+	// Creating task
+	public static void creatingTask(String formattedDateTime) {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
 		// creating new task
 		Actions actions = new Actions(driver);
 		actions.moveToElement(driver.findElement(By.xpath(TasksTabPage.addNewBtn()))).perform(); //
-		wait.until(ExpectedConditions.elementToBeClickable(driver.findElement(By.xpath(TasksTabPage.addNewBtn()))));
 		ElementSelector.clickByxpath(TasksTabPage.addNewBtn());
 		log.debug("Clicked on add new button to create new task");
 		ElementSelector.clickByxpath(TasksTabPage.createNewTasks());
 		log.debug("Clicked on create new task");
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(TasksTabPage.enteringTaskName())));
 		try {
 			driver.findElement(By.xpath(TasksTabPage.enteringTaskName())).clear();
 		} catch (StaleElementReferenceException e) {
@@ -146,33 +142,35 @@ public class CommonTestStepMethods extends BaseActi {
 				prop.getProperty("taskName") + formattedDateTime);
 		System.out.println("Created task : " + prop.getProperty("taskName") + formattedDateTime);
 		log.debug("Entered Task name");
-		wait.until(ExpectedConditions.elementToBeClickable(driver.findElement(By.xpath(TasksTabPage.createTask()))));
 		ElementSelector.clickByxpath(TasksTabPage.createTask());
 
 	}
 
 	// Adding new task from tasks tab
-	public static String creatingNewTaskFromAddTaskBtnTab(String dateTime) {
+	public static String creatingNewTaskFromAddTaskBtnTab(String formattedDateTime) {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(40));
-		String formattedDateTime = dateTime;
 		String newSubTask = (prop.getProperty("newTaskName") + formattedDateTime);
 		try {
-			wait.until(ExpectedConditions.elementToBeClickable(By.xpath(TasksTabPage.addNewTaskBtn())));
 			ElementSelector.clickByxpath(TasksTabPage.addNewTaskBtn());
 		} catch (ElementClickInterceptedException e) {
-			wait.until(ExpectedConditions.elementToBeClickable(By.xpath(TasksTabPage.addNewTaskBtn())));
-			ElementSelector.clickByxpath(TasksTabPage.addNewTaskBtn());
+			JavascriptExecutor js = (JavascriptExecutor) driver;
+			js.executeScript("arguments[0].click();", driver.findElement(By.xpath(TasksTabPage.addNewTaskBtn())));
 		}
 		log.debug("Clicked on add new button ");
-		driver.findElement(By.xpath(TasksTabPage.addingNewTaskTextBox())).clear();
-		SendKeysToElement.sendKeysToElementByXpath(TasksTabPage.addingNewTaskTextBox(), newSubTask);
-		log.debug("Entered new task ");
-		wait.until(ExpectedConditions.elementToBeClickable(By.xpath(TasksTabPage.addNewBtnAfterEneteringTask())));
+
 		try {
-			ElementSelector.clickByxpath(TasksTabPage.addNewBtnAfterEneteringTask());
+			SendKeysToElement.sendKeysToElementByXpath(TasksTabPage.addingNewTaskTextBox(), newSubTask);
 		} catch (Exception e) {
-			WebElement addTaskBtn = driver.findElement(By.xpath(TasksTabPage.addNewBtnAfterEneteringTask()));
-			wait.until(ExpectedConditions.elementToBeClickable(addTaskBtn));
+			JavascriptExecutor js = (JavascriptExecutor) driver;
+			js.executeScript("arguments[0].value = arguments[1];",
+					driver.findElement(By.xpath(TasksTabPage.addingNewTaskTextBox())), newSubTask);
+		}
+		log.debug("Entered new task ");
+		try {
+			ElementSelector.clickByxpath(TasksTabPage.addTaskBtnAfterEneteringTask());
+		} catch (Exception e) {
+			WebElement addTaskBtn = driver.findElement(By.xpath(TasksTabPage.addTaskBtnAfterEneteringTask()));
+			JavascriptExecutor js = (JavascriptExecutor) driver;
 			js.executeScript("arguments[0].click();", addTaskBtn);
 		}
 		log.debug("Clicked on add new button after entering new task");
@@ -188,94 +186,139 @@ public class CommonTestStepMethods extends BaseActi {
 					.elementToBeClickable(driver.findElement(By.xpath(TasksTabPage.searchCustomerName()))));
 			driver.findElement(By.xpath(TasksTabPage.searchCustomerName())).clear();
 		} catch (Exception e) {
-			wait.until(ExpectedConditions
-					.elementToBeClickable(driver.findElement(By.xpath(TasksTabPage.searchCustomerName()))));
-			driver.findElement(By.xpath(TasksTabPage.searchCustomerName())).clear();
+			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(TasksTabPage.searchCustomerName())));
+			JavascriptExecutor js = (JavascriptExecutor) driver;
+			js.executeScript("arguments[0].value = '';",
+					driver.findElement(By.xpath(TasksTabPage.searchCustomerName())));
 		}
-
-		SendKeysToElement.sendKeysToElementByXpath(TasksTabPage.searchCustomerName(),
-				prop.getProperty("customerName") + formattedDateTime);
-		wait.until(ExpectedConditions.elementToBeClickable(By.xpath(TasksTabPage.firstCustomerName())));
+		String createdCustomerName = prop.getProperty("customerName") + formattedDateTime;
+		SendKeysToElement.sendKeysToElementByXpath(TasksTabPage.searchCustomerName(), createdCustomerName);
+		String createdCustomerXpath = "//div[@class='filteredContainer']//div[@class='itemsContainer']//*[text()='"
+				+ createdCustomerName + "']";
 		try {
-			ElementSelector.clickByxpath(TasksTabPage.firstCustomerName());
-		} catch (Exception ElementClickInterceptedException) {
-			driver.findElement(By.xpath(TasksTabPage.firstCustomerName())).click();
+			ElementSelector.clickByxpath(createdCustomerXpath);
+		} catch (Exception e) {
+			WebElement createdCustomerWebElement = driver.findElement(By.xpath(createdCustomerXpath));
+			JavascriptExecutor js = (JavascriptExecutor) driver;
+			js.executeScript("arguments[0].click();", createdCustomerWebElement);
 		}
-
 	}
 
 	// Searching and clicking on the newly created project of customer
 	public static void serachingClickingNewlyCreatedCustomerFirstProject(String formattedDateTime)
 			throws InterruptedException {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
-		wait.until(ExpectedConditions
-				.elementToBeClickable(driver.findElement(By.xpath(TasksTabPage.searchCustomerName()))));
-		driver.findElement(By.xpath(TasksTabPage.searchCustomerName())).clear();
-		SendKeysToElement.sendKeysToElementByXpath(TasksTabPage.searchCustomerName(),
-				prop.getProperty("customerName") + formattedDateTime);
-		wait.until(ExpectedConditions.elementToBeClickable(By.xpath(TasksTabPage.firstCustomerName())));
 		try {
-			ElementSelector.clickByxpath(TasksTabPage.firstCustomerName());
-		} catch (StaleElementReferenceException e) {
-			ElementSelector.clickByxpath(TasksTabPage.firstCustomerName());
+			wait.until(
+					ExpectedConditions.visibilityOf(driver.findElement(By.xpath(TasksTabPage.searchCustomerName()))));
+			driver.findElement(By.xpath(TasksTabPage.searchCustomerName())).clear();
+		} catch (Exception e) {
+			JavascriptExecutor js = (JavascriptExecutor) driver;
+			js.executeScript("arguments[0].value='';", driver.findElement(By.xpath(TasksTabPage.searchCustomerName())));
 		}
-		wait.until(ExpectedConditions.elementToBeClickable(By.xpath(TasksTabPage.viewCustomerProjects())));
-		ElementSelector.clickByxpath(TasksTabPage.viewCustomerProjects());
+		String createdCustomerName = prop.getProperty("customerName") + formattedDateTime;
+		SendKeysToElement.sendKeysToElementByXpath(TasksTabPage.searchCustomerName(), createdCustomerName);
+		String createdCustomerXpath = "//div[@class='filteredContainer']//div[@class='itemsContainer']//*[text()='"
+				+ createdCustomerName + "']";
+		try {
+			ElementSelector.clickByxpath(createdCustomerXpath);
+		} catch (Exception e) {
+			WebElement createdCustomerWebElement = driver.findElement(By.xpath(createdCustomerXpath));
+			JavascriptExecutor js = (JavascriptExecutor) driver;
+			js.executeScript("arguments[0].click();", createdCustomerWebElement);
+		}
+
+		ElementSelector.clickByxpath(TasksTabPage.viewCustomerProjects(createdCustomerName));
 		wait.until(ExpectedConditions.elementToBeClickable(By.xpath(TasksTabPage.firstProjectName())));
 		ElementSelector.clickByxpath(TasksTabPage.firstProjectName());
 	}
 
 	// Editing customer name
-	public static String editingCustomerName(String dateTime) throws InterruptedException {
-		// Editing customer name
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
-		String formattedDateTime = dateTime;
-		String newCustomerName = prop.getProperty("editedCustomeName") + formattedDateTime;
-		try {
-			ElementSelector.clickByxpath(TasksTabPage.editIcon());
-		} catch (Exception e) {
-			driver.findElement(By.xpath(TasksTabPage.editIcon())).click();
-		}
-		log.debug("Clicked on view customer edit icon");
-		Actions actions = new Actions(driver);
-
-		wait.until(ExpectedConditions.elementToBeClickable(By.xpath(TasksTabPage.customerNameLabeToEdit())));
+	public static String editingCustomerName(String formattedDateTime) throws InterruptedException {
 		JavascriptExecutor js = (JavascriptExecutor) driver;
-		WebElement customerNameLabeToEdit = driver.findElement(By.xpath(TasksTabPage.customerNameLabeToEdit()));
+		String newCustomerName = prop.getProperty("editedCustomeName") + formattedDateTime;
+		    try {
+		        driver.navigate().refresh();
+		        CommonTestStepMethods.serachingClickingNewlyCreatedCustomer(formattedDateTime);
+		        WebElement editIcon = driver.findElement(By.xpath(TasksTabPage.editIcon()));
+		        try {
+		            ElementSelector.clickByxpath(TasksTabPage.editIcon());
+		        } catch (Exception e1) {
+		            try {
+		                editIcon.click();
+		            } catch (Exception e2) {
+		                js.executeScript("arguments[0].click();", editIcon);
+		            }
+		        }
+
+		        log.debug("Clicked on view customer edit icon");
+		        WebElement customerNameLabelToEdit = driver.findElement(By.xpath(TasksTabPage.customerNameLabeToEdit()));
+		        js.executeScript("arguments[0].click();", customerNameLabelToEdit);
+		        log.debug("Clicked on old customer name label to edit");
+		        WebElement customerNameInputBox = driver.findElement(By.xpath(TasksTabPage.customerNameInputBox()));
+		        customerNameInputBox.clear();
+		        customerNameInputBox.sendKeys(newCustomerName);
+		        customerNameInputBox.sendKeys(Keys.RETURN);
+		        ElementSelector.clickByxpath(TasksTabPage.closeCustomerEditTab());
+		        log.debug("Edited customer name");
+		    } catch (Exception e) {
+		    	System.out.println("Exception in editing customer name : ");
+		    }
 		Thread.sleep(2000);
-		js.executeScript("arguments[0].click();", customerNameLabeToEdit);
-		log.debug("Clicked on old customer name lable to edit");
-		WebElement customerNameInputBox = driver.findElement(By.xpath(TasksTabPage.customerNameInputBox()));
-		customerNameInputBox.clear(); 
-		SendKeysToElement.sendKeysToElementByXpath(TasksTabPage.customerNameInputBox(), newCustomerName);
-		ElementSelector.clickByxpath(TasksTabPage.closeCustomerEditTab());
-		log.debug("Edited customer name");
 		return newCustomerName;
 
 	}
-	
+
+	// Searching and clicking on the newly created customer
+		public static void serachingClickingEditedCreatedCustomer(String editedCustomerName) throws InterruptedException {
+			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+			try {
+				wait.until(ExpectedConditions
+						.elementToBeClickable(driver.findElement(By.xpath(TasksTabPage.searchCustomerName()))));
+				driver.findElement(By.xpath(TasksTabPage.searchCustomerName())).clear();
+			} catch (Exception e) {
+				wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(TasksTabPage.searchCustomerName())));
+				JavascriptExecutor js = (JavascriptExecutor) driver;
+				js.executeScript("arguments[0].value = '';",
+						driver.findElement(By.xpath(TasksTabPage.searchCustomerName())));
+			}
+			SendKeysToElement.sendKeysToElementByXpath(TasksTabPage.searchCustomerName(), editedCustomerName);
+			String createdCustomerXpath = "//div[@class='filteredContainer']//div[@class='itemsContainer']//*[text()='"
+					+ editedCustomerName + "']";
+			try {
+				ElementSelector.clickByxpath(createdCustomerXpath);
+			} catch (Exception e) {
+				WebElement createdCustomerWebElement = driver.findElement(By.xpath(createdCustomerXpath));
+				JavascriptExecutor js = (JavascriptExecutor) driver;
+				js.executeScript("arguments[0].click();", createdCustomerWebElement);
+			}
+		}
+		
 	// deleting edited customer
-	public static void deletingEditedCustomer(String newCustomerName) {
+	public static void deletingEditedCustomer() {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
-		wait.until(ExpectedConditions.elementToBeClickable(driver.findElement(By.xpath(TasksTabPage.editIcon()))));
 		try {
 			ElementSelector.clickByxpath(TasksTabPage.editIcon());
 		} catch (Exception e) {
-			ElementSelector.clickByxpath(TasksTabPage.editIcon());
+			JavascriptExecutor js = (JavascriptExecutor) driver;
+			js.executeScript("arguments[0].click();", driver.findElement(By.xpath(TasksTabPage.editIcon())));
 		}
-
+		
+		WebElement actionDropDown = driver.findElement(By.xpath(TasksTabPage.actionDropDown()));
+		try {
 		wait.until(ExpectedConditions.elementToBeClickable(By.xpath(TasksTabPage.actionDropDown())));
-		WebElement adctionDropDown = driver.findElement(By.xpath(TasksTabPage.actionDropDown()));
-		((JavascriptExecutor) driver).executeScript("arguments[0].click();", adctionDropDown);
-		WebElement deleteBtn = driver.findElement(By.xpath(TasksTabPage.delteBtn()));
-		((JavascriptExecutor) driver).executeScript("arguments[0].click();", deleteBtn);
-		try {
-			ElementSelector.clickByxpath(TasksTabPage.deletPermanentlyBtn());
-		} catch (Exception e) {
-			driver.findElement(By.xpath(TasksTabPage.deletPermanentlyBtn())).click();
+		((JavascriptExecutor) driver).executeScript("arguments[0].click();", actionDropDown);
 		}
-		log.debug(" customer name : " + newCustomerName + " is deleted");
-
+		catch(Exception e) {
+			Actions action = new Actions(driver);
+			action.moveToElement(actionDropDown).click().perform();
+			
+		}
+		WebElement deleteBtn = driver.findElement(By.xpath(TasksTabPage.delteBtn()));
+		wait.until(ExpectedConditions.elementToBeClickable(By.xpath(TasksTabPage.delteBtn())));
+		((JavascriptExecutor) driver).executeScript("arguments[0].click();", deleteBtn);
+		WebElement deletePermanentlyBtn = driver.findElement(By.xpath(TasksTabPage.deletPermanentlyBtn()));
+		((JavascriptExecutor) driver).executeScript("arguments[0].click();", deletePermanentlyBtn);
 	}
 
 	// Validations of tasks present in the Big Bang customer
@@ -303,10 +346,11 @@ public class CommonTestStepMethods extends BaseActi {
 		for (List<String> tasks : tasksHM.values()) {
 			totalTasks += tasks.size();
 		}
+		System.out.println("Total tasks in tasksHM are" + totalTasks );
 		return totalTasks;
 	}
 
-	// Getting tasks list and storing it in hashmpa-list collection
+	// Getting tasks list and storing it in hashmap-list collection
 	public static HashMap<String, List<String>> gettingTasksList(String project_CustomerName)
 			throws InterruptedException {
 		tasksListCheckTestObjects tasksListCheckTestObjects = new tasksListCheckTestObjects(driver);
@@ -326,41 +370,40 @@ public class CommonTestStepMethods extends BaseActi {
 				List<String> tasks = new ArrayList<>(); // Create a new list for each customer
 
 				// Find all tasks for the customer
-				Thread.sleep(1000);
+				Thread.sleep(2000);
 				List<WebElement> tasksOfCustomerList = driver
 						.findElements(By.xpath(tasksListCheckTestObjects.tasksInCustomersRow()));
 				for (WebElement taskOfCustomer : tasksOfCustomerList) {
-					wait.until(ExpectedConditions.visibilityOf(taskOfCustomer));
+//					wait.until(ExpectedConditions.visibilityOf(taskOfCustomer));
 					tasks.add(taskOfCustomer.getText());
 				}
-
+				
 				// Add the tasks for the current project to the map
 				gettingTasksList.put(project, tasks);
-				// Minimize the project if necessary
+				// Minimize the project 
 				String customerName = "//*[text()='OPEN TASKS']//following::*[@class='projectName' and text()='"
 						+ project + "']";
 				WebElement minimize = driver.findElement(By.xpath(customerName));
-				wait.until(ExpectedConditions.elementToBeClickable(minimize));
 				js.executeScript("arguments[0].click();", minimize);
 			}
 		} else {
 			List<String> tasks = new ArrayList<>(); // Create a new list for the projects of customer
 			// Find all tasks in the project of customer
 
-			Thread.sleep(1000);
+			Thread.sleep(2000);
 			List<WebElement> tasksOfCustomerList = driver
 					.findElements(By.xpath(tasksListCheckTestObjects.tasksInCustomersRow()));
 			for (WebElement taskOfCustomer : tasksOfCustomerList) {
-			
-				try{
+
+				try {
 					wait.until(ExpectedConditions.visibilityOf(taskOfCustomer));
-				tasks.add(taskOfCustomer.getText());
-				}
-				catch(Exception e) {
+					tasks.add(taskOfCustomer.getText());
+				} catch (Exception e) {
 					wait.until(ExpectedConditions.visibilityOf(taskOfCustomer));
-					tasks.add(taskOfCustomer.getText());	
+					tasks.add(taskOfCustomer.getText());
 				}
 			}
+			
 
 			// Add the tasks for the customer to the map
 			gettingTasksList.put(project_CustomerName, tasks);
@@ -371,12 +414,11 @@ public class CommonTestStepMethods extends BaseActi {
 
 	// clicking on Big bang company and getting all tasks list
 	public static HashMap tasksListBigBangCompany() throws InterruptedException {
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
-		wait.until(ExpectedConditions.elementToBeClickable(By.xpath(tasksListCheckTestObjects.BigBangCompanyCust())));
 		try {
 			ElementSelector.clickByxpath(tasksListCheckTestObjects.BigBangCompanyCust());
 		} catch (Exception e) {
-			driver.findElement(By.xpath(tasksListCheckTestObjects.BigBangCompanyCust())).click();
+			((JavascriptExecutor) driver).executeScript("arguments[0].click();",
+					driver.findElement(By.xpath(tasksListCheckTestObjects.BigBangCompanyCust())));
 		}
 		HashMap<String, List<String>> BigBangCompanyHM = CommonTestStepMethods.gettingTasksList("BigBangCompanyCust");
 		return BigBangCompanyHM;
@@ -389,6 +431,7 @@ public class CommonTestStepMethods extends BaseActi {
 				ExpectedConditions.elementToBeClickable(By.xpath(tasksListCheckTestObjects.FlightOperationProject())));
 		WebElement flightOperationCustomer = driver
 				.findElement(By.xpath(tasksListCheckTestObjects.FlightOperationProject()));
+		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("arguments[0].click()", flightOperationCustomer);
 		HashMap<String, List<String>> FlightOperationProjectHM = CommonTestStepMethods
 				.gettingTasksList("FlightOperationProject");
@@ -402,6 +445,7 @@ public class CommonTestStepMethods extends BaseActi {
 				.elementToBeClickable(By.xpath(tasksListCheckTestObjects.SpaceShipBuildingProject())));
 		WebElement spaceShipBuildin = driver
 				.findElement(By.xpath(tasksListCheckTestObjects.SpaceShipBuildingProject()));
+		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("arguments[0].click()", spaceShipBuildin);
 		HashMap<String, List<String>> ShipBuildingOperationHM = CommonTestStepMethods
 				.gettingTasksList("SpaceShipBuildingProject");
@@ -414,14 +458,19 @@ public class CommonTestStepMethods extends BaseActi {
 		wait.until(
 				ExpectedConditions.elementToBeClickable(By.xpath(tasksListCheckTestObjects.SpaceShipTestingProject())));
 		WebElement spaceShipTesting = driver.findElement(By.xpath(tasksListCheckTestObjects.SpaceShipTestingProject()));
+		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("arguments[0].click()", spaceShipTesting);
 		HashMap<String, List<String>> ShipTestingProjectHM = CommonTestStepMethods
 				.gettingTasksList("SpaceShipTestingProject");
 		return ShipTestingProjectHM;
 	}
-
-	// Clicking on Reports tab from nav bar
-	public static void clickingOnReportsTab() {
-		ElementSelector.clickByxpath(reportPageObjects.reprtsTabXpath());		
-	}
+	
+	// Refresh and clicking on task tab 
+	public static void refreshClickOnTasksTab(WebDriver driver) {
+		driver.navigate().refresh();
+		CommonTestStepMethods.openigTask();
+		driver.navigate().refresh();
+		CommonTestStepMethods.openigTask();
+		}
+		
 }

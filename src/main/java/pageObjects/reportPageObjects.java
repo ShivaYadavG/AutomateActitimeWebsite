@@ -46,4 +46,24 @@ public class reportPageObjects {
 	public String deleteWidgetXpath() {
 		return deleteWidgetXpath;
 	}
+	
+	public String settingIconWidgetXpath(String widgetname) {
+		String settingIconWidgetXpath ="(//div[contains(@class,'containers')]//span[text()='" + widgetname + "']/../../..//div[contains(@class,'Widget-header')]//div//*)[1]";
+		return settingIconWidgetXpath;
+	}
+	
+	private String enterWidgetNameInputXpath = "//input[@placeholder='Enter Widget Name']";
+	public String enterWidgetNameInputXpath() {
+		return enterWidgetNameInputXpath;
+	}
+	
+	private String SaveWidgetBtnXpath = "//span[normalize-space()='Save']";
+	public String SaveWidgetBtnXpath() {
+		return SaveWidgetBtnXpath;
+	}
+	
+	public String widgetName(String widgetName) {
+	String WidgetName = "//span[contains(text(),'"+widgetName+"')]";
+	return WidgetName;
+	}
 }

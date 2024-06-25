@@ -1,15 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
-  <test name="Default test(failed)">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test name="ReportPageTest(failed)">
     <classes>
       <class name="test.ReportPageTest">
         <methods>
+          <include name="editNameOfwidget"/>
           <include name="launching"/>
           <include name="closure"/>
           <include name="deleteWidget"/>
         </methods>
       </class> <!-- test.ReportPageTest -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- ReportPageTest(failed) -->
+  <test name="CommonTest(failed)">
+    <classes>
+      <class name="test.CommonTest">
+        <methods>
+          <include name="DeletingTaskTest"/>
+          <include name="creatingNewTaskFromTaskTabTest"/>
+          <include name="creatingProjectTest"/>
+          <include name="editinCustomerNameTest"/>
+          <include name="deletingCustomerTest"/>
+          <include name="launching"/>
+          <include name="closure"/>
+          <include name="creatingCustomerTest"/>
+          <include name="creatingTaskTest"/>
+        </methods>
+      </class> <!-- test.CommonTest -->
+    </classes>
+  </test> <!-- CommonTest(failed) -->
+  <test name="tasksListCheckTest(failed)">
+    <classes>
+      <class name="test.tasksListCheckTest">
+        <methods>
+          <include name="totalTasksTest"/>
+          <include name="launching"/>
+          <include name="closure"/>
+          <include name="tasksListCheckTest"/>
+        </methods>
+      </class> <!-- test.tasksListCheckTest -->
+    </classes>
+  </test> <!-- tasksListCheckTest(failed) -->
+  <test name="UsersPageTest(failed)">
+    <classes>
+      <class name="test.UsersPageTest">
+        <methods>
+          <include name="creatingDeartmentTest"/>
+          <include name="deletingDepartment"/>
+          <include name="editingCreatdDepartmentTest"/>
+          <include name="launching"/>
+          <include name="closure"/>
+        </methods>
+      </class> <!-- test.UsersPageTest -->
+    </classes>
+  </test> <!-- UsersPageTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->

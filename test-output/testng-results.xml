@@ -1,25 +1,93 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="2" total="3" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="15" passed="15" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-06-18T10:49:38Z" name="Default suite" finished-at="2024-06-18T10:49:54Z" duration-ms="16129">
+  <suite started-at="2024-06-25T10:22:43Z" name="Suite" finished-at="2024-06-25T10:26:31Z" duration-ms="228330">
     <groups>
     </groups>
-    <test started-at="2024-06-18T10:49:38Z" name="Default test" finished-at="2024-06-18T10:49:54Z" duration-ms="16129">
-      <class name="test.customerTest">
-        <test-method is-config="true" signature="launching()[pri:0, instance:test.customerTest@6af9fcb2]" started-at="2024-06-18T16:19:20Z" name="launching" finished-at="2024-06-18T16:19:38Z" duration-ms="17847" status="PASS">
+    <test started-at="2024-06-25T10:22:43Z" name="ReportPageTest" finished-at="2024-06-25T10:23:07Z" duration-ms="24399">
+      <class name="test.ReportPageTest">
+        <test-method signature="creatAndVerifyWidget()[pri:1, instance:test.ReportPageTest@62230c58]" started-at="2024-06-25T15:52:43Z" name="creatAndVerifyWidget" finished-at="2024-06-25T15:52:52Z" duration-ms="9244" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- creatAndVerifyWidget -->
+        <test-method signature="deleteWidget()[pri:2, instance:test.ReportPageTest@62230c58]" started-at="2024-06-25T15:52:52Z" name="deleteWidget" finished-at="2024-06-25T15:52:59Z" duration-ms="7154" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteWidget -->
+        <test-method signature="editNameOfwidget()[pri:3, instance:test.ReportPageTest@62230c58]" started-at="2024-06-25T15:52:59Z" name="editNameOfwidget" finished-at="2024-06-25T15:53:07Z" duration-ms="7957" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- editNameOfwidget -->
+      </class> <!-- test.ReportPageTest -->
+    </test> <!-- ReportPageTest -->
+    <test started-at="2024-06-25T10:23:07Z" name="CommonTest" finished-at="2024-06-25T10:25:18Z" duration-ms="130995">
+      <class name="test.CommonTest">
+        <test-method signature="creatingCustomerTest()[pri:1, instance:test.CommonTest@306f16f3]" started-at="2024-06-25T15:53:07Z" name="creatingCustomerTest" finished-at="2024-06-25T15:53:14Z" duration-ms="6343" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- creatingCustomerTest -->
+        <test-method signature="editinCustomerNameTest()[pri:2, instance:test.CommonTest@306f16f3]" started-at="2024-06-25T15:53:14Z" name="editinCustomerNameTest" finished-at="2024-06-25T15:53:32Z" duration-ms="17878" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- editinCustomerNameTest -->
+        <test-method signature="creatingProjectTest()[pri:3, instance:test.CommonTest@306f16f3]" started-at="2024-06-25T15:53:32Z" name="creatingProjectTest" finished-at="2024-06-25T15:53:39Z" duration-ms="6977" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- creatingProjectTest -->
+        <test-method signature="creatingTaskTest()[pri:4, instance:test.CommonTest@306f16f3]" started-at="2024-06-25T15:53:39Z" name="creatingTaskTest" finished-at="2024-06-25T15:53:49Z" duration-ms="10427" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- creatingTaskTest -->
+        <test-method signature="creatingNewTaskFromTaskTabTest()[pri:5, instance:test.CommonTest@306f16f3]" started-at="2024-06-25T15:53:49Z" name="creatingNewTaskFromTaskTabTest" finished-at="2024-06-25T15:54:57Z" duration-ms="68063" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- creatingNewTaskFromTaskTabTest -->
+        <test-method signature="deletingCustomerTest()[pri:6, instance:test.CommonTest@306f16f3]" started-at="2024-06-25T15:54:57Z" name="deletingCustomerTest" finished-at="2024-06-25T15:55:06Z" duration-ms="9241" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deletingCustomerTest -->
+        <test-method signature="DeletingTaskTest()[pri:7, instance:test.CommonTest@306f16f3]" started-at="2024-06-25T15:55:06Z" name="DeletingTaskTest" finished-at="2024-06-25T15:55:18Z" duration-ms="12060" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DeletingTaskTest -->
+      </class> <!-- test.CommonTest -->
+    </test> <!-- CommonTest -->
+    <test started-at="2024-06-25T10:25:18Z" name="tasksListCheckTest" finished-at="2024-06-25T10:26:09Z" duration-ms="50197">
+      <class name="test.tasksListCheckTest">
+        <test-method signature="tasksListCheckTest()[pri:1, instance:test.tasksListCheckTest@48974e45]" started-at="2024-06-25T15:55:18Z" name="tasksListCheckTest" finished-at="2024-06-25T15:55:37Z" duration-ms="18270" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tasksListCheckTest -->
+        <test-method signature="totalTasksTest()[pri:2, instance:test.tasksListCheckTest@48974e45]" started-at="2024-06-25T15:55:37Z" name="totalTasksTest" finished-at="2024-06-25T15:56:09Z" duration-ms="31924" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- totalTasksTest -->
+      </class> <!-- test.tasksListCheckTest -->
+    </test> <!-- tasksListCheckTest -->
+    <test started-at="2024-06-25T10:26:09Z" name="UsersPageTest" finished-at="2024-06-25T10:26:31Z" duration-ms="22716">
+      <class name="test.UsersPageTest">
+        <test-method is-config="true" signature="launching()[pri:0, instance:test.UsersPageTest@2fd1433e]" started-at="2024-06-25T15:52:15Z" name="launching" finished-at="2024-06-25T15:52:43Z" duration-ms="27638" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launching -->
-        <test-method signature="delete_VerifyTest()[pri:1, instance:test.customerTest@6af9fcb2]" started-at="2024-06-18T16:19:38Z" name="delete_VerifyTest" finished-at="2024-06-18T16:19:54Z" duration-ms="16116" status="PASS">
+        <test-method signature="creatingDeartmentTest()[pri:1, instance:test.UsersPageTest@2fd1433e]" started-at="2024-06-25T15:56:09Z" name="creatingDeartmentTest" finished-at="2024-06-25T15:56:14Z" duration-ms="5528" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- delete_VerifyTest -->
-        <test-method is-config="true" signature="closure()[pri:0, instance:test.customerTest@6af9fcb2]" started-at="2024-06-18T16:19:54Z" name="closure" finished-at="2024-06-18T16:19:54Z" duration-ms="158" status="PASS">
+        </test-method> <!-- creatingDeartmentTest -->
+        <test-method signature="editingCreatdDepartmentTest()[pri:2, instance:test.UsersPageTest@2fd1433e]" started-at="2024-06-25T15:56:14Z" name="editingCreatdDepartmentTest" finished-at="2024-06-25T15:56:17Z" duration-ms="2926" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- editingCreatdDepartmentTest -->
+        <test-method signature="deletingDepartment()[pri:3, instance:test.UsersPageTest@2fd1433e]" started-at="2024-06-25T15:56:17Z" name="deletingDepartment" finished-at="2024-06-25T15:56:31Z" duration-ms="14248" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deletingDepartment -->
+        <test-method is-config="true" signature="closure()[pri:0, instance:test.UsersPageTest@2fd1433e]" started-at="2024-06-25T15:56:31Z" name="closure" finished-at="2024-06-25T15:56:31Z" duration-ms="160" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closure -->
-      </class> <!-- test.customerTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- test.UsersPageTest -->
+    </test> <!-- UsersPageTest -->
+  </suite> <!-- Suite -->
 </testng-results>

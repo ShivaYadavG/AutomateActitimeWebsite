@@ -93,8 +93,6 @@ public class tasksListCheckTestObjects {
 
 	}
 
-	// css path scrollable div = .content.kanbanVerticalScrollContainer
-
 	private String scrollableDiv = "//div[@class = 'kanbanViewContainer']";
 
 	public String scrollableDiv() {
@@ -119,8 +117,7 @@ public class tasksListCheckTestObjects {
 		return tasksInCustomersRow;
 	}
 
-	private String taskCheckbox = "//div[@class='taskColumns']//input[@class='checkbox ']/following-sibling::span";
-
+	private String taskCheckbox = "//div[contains(@class,'cardWithCheckbox')]//span[contains(@class,'checkmark type_checkbox')]";
 	public String taskCheckbox() {
 		return taskCheckbox;
 	}

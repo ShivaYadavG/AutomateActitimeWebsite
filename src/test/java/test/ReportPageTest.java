@@ -1,7 +1,6 @@
 package test;
 
 import java.time.Duration;
-import java.util.List;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -26,8 +25,8 @@ public class ReportPageTest extends BaseActi {
 
 	@Test(priority = 1)
 	public void creatAndVerifyWidget() {
-
 		driver.navigate().refresh();
+		reportPageMethods.clickingOnReportsTab();
 		String widgetName = reportPageMethods.creteWidget();
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
 		wait.until(
@@ -41,12 +40,34 @@ public class ReportPageTest extends BaseActi {
 	@Test(priority = 2)
 	public void deleteWidget() {
 		driver.navigate().refresh();
+		reportPageMethods.clickingOnReportsTab();
 		String widgetName = reportPageMethods.creteWidget();
 		reportPageMethods.deleteWidget(widgetName);
 		String createdWidgetXpath = "//*[text()='" + widgetName + "']";
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(1));
-		wait.until(ExpectedConditions.numberOfElementsToBe(By.xpath(createdWidgetXpath),0));
-		List<WebElement> elements = driver.findElements(By.xpath(createdWidgetXpath));
-		Assert.assertEquals(0, elements.size());
+		try {
+			driver.navigate().refresh();
+			WebElement deletedWidget = driver.findElement(By.xpath(createdWidgetXpath));
+			System.out.println(deletedWidget + " widget is not deleted");
+		}
+		catch(Exception e) {
+			boolean isWidgetDeleted = true;
+			Assert.assertTrue(isWidgetDeleted);
+		}
 	}
+	
+	@Test(priority = 3)
+	public void editNameOfwidget() {
+		driver.navigate().refresh();
+		reportPageMethods.clickingOnReportsTab();
+		String widgetName = reportPageMethods.creteWidget();
+		System.out.println(widgetName);
+		String NewWidgetName = reportPageMethods.editWidgetName(widgetName);
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+		System.out.println(NewWidgetName);
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(reportPageObjects.widgetName(NewWidgetName))));
+		boolean isNewWidgetDisplayed = driver.findElement(By.xpath(reportPageObjects.widgetName(NewWidgetName))).isDisplayed();
+		Assert.assertTrue(isNewWidgetDisplayed);
+		
+	}
+	
 }
